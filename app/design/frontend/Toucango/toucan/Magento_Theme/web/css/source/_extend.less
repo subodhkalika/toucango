@@ -1,0 +1,95 @@
+//
+//  Common
+//  _____________________________________________
+
+& when (@media-common = true) {
+    .header.content {
+        .logo {
+            position: absolute;
+            margin: 10px 0 0 0;
+            left: ~"calc(50% - 80px)";
+            top: 3px;
+            z-index: 6;
+            width: 125px;
+            
+            .page-print & {
+            display: inline-block;
+            float: none;
+            }
+        }
+    }
+
+}
+
+//
+//  Desktop
+//  _____________________________________________
+
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
+
+    //
+    //  Header
+    //  ---------------------------------------------
+    
+    .logo {
+      margin: 10px 0 0 0;
+      position: absolute;
+      left: ~"calc(50% - 80px)";
+      top: 0;
+    }
+  
+    .navigation > ul {
+      text-align: center;
+      font-weight: 400;
+    }
+
+    .navigation {
+        margin-bottom: 32px;
+    }
+    
+    .navigation .level0 > .level-top {
+        font-size: 1.5rem;
+        font-weight: 400;
+        letter-spacing: 1px;
+    }
+
+    .header {
+        &.panel {
+          > .header.links {
+            > li {
+              &.welcome {
+                > span {
+                  font-size: 1.2rem;
+                }
+              }
+            }
+          }
+        }
+    }
+
+    .page-header {
+        .panel.wrapper {
+            border-bottom: 1px solid #f9f9f9;
+            background: #f9f9f9;
+        }
+        .header.content {
+            padding: 30px 20px 55px;
+        }
+    }
+    
+    .cms-index-index {
+        .page-title-wrapper {
+            display: none;
+        }
+    }
+}  
+//
+//  Mobile
+//  _____________________________________________
+
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__s) {
+    .logo {
+        margin-left: 20px;
+        width: 120px;
+    }
+}

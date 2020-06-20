@@ -3,9 +3,6 @@
 ## use command bin/magento deploy:mode:set to switch modes
 
 #   SetEnv MAGE_MODE developer
-<IfModule mod_php5.c>
-Php_value memory_limt 1024MM
-</IfModule>
 
 ############################################
 ## uncomment these lines for CGI mode
