@@ -15,7 +15,7 @@
         <referenceContainer name="contacts_footer_container">
             <block class="Magento\Theme\Block\Html\Header\Logo" name="footer.logo">
                 <arguments>
-                    <argument name="logo_file" xsi:type="string">images/logo.png</argument>
+                    <argument name="logo_file" xsi:type="string">images/toucangologo.png</argument>
                     <argument name="logo_alt" xsi:type="string">Pronko Consulting</argument>
                     <argument name="logo_img_width" xsi:type="number">150</argument>
                     <argument name="logo_img_height" xsi:type="number">50</argument>
@@ -34,7 +34,7 @@
                     <argument name="li_params" xsi:type="array">
                         <item name="class" xsi:type="string">contact-item</item>
                     </argument>
-                    <argument name="inner_text" xsi:type="string">DUBLIN HQ</argument>
+                    <argument name="inner_text" xsi:type="string">Toucango</argument>
                 </arguments>
             </block>
             <block class="Magento\Framework\View\Element\Text\TextList\Item" name="footer.contact.line.1">
@@ -42,7 +42,7 @@
                     <argument name="li_params" xsi:type="array">
                         <item name="class" xsi:type="string">contact-item</item>
                     </argument>
-                    <argument name="inner_text" xsi:type="string">43 Beaumont Rd</argument>
+                    <argument name="inner_text" xsi:type="string">1 Freshwater Place</argument>
                 </arguments>
             </block>
             <block class="Magento\Framework\View\Element\Text\TextList\Item" name="footer.contact.line.2">
@@ -50,7 +50,7 @@
                     <argument name="li_params" xsi:type="array">
                         <item name="class" xsi:type="string">contact-item</item>
                     </argument>
-                    <argument name="inner_text" xsi:type="string">Dublin, D09, Ireland</argument>
+                    <argument name="inner_text" xsi:type="string">Southbank VIC 3006</argument>
                 </arguments>
             </block>
             <block class="Magento\Framework\View\Element\Text\TextList\Item" name="footer.contact.line.3">
@@ -58,7 +58,7 @@
                     <argument name="li_params" xsi:type="array">
                         <item name="class" xsi:type="string">contact-item</item>
                     </argument>
-                    <argument name="inner_text" xsi:type="string">info@pronkoconsulting.com</argument>
+                    <argument name="inner_text" xsi:type="string">infotoucango@gmail.com</argument>
                 </arguments>
             </block>
         </referenceBlock>
