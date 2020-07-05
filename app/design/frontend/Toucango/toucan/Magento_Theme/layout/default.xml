@@ -11,14 +11,8 @@
         </referenceBlock>
 
         <referenceBlock name="report.bugs" remove="true" />
-        <referenceBlock name="top.search" remove="true" />
+        <referenceBlock name="advanced-search-link" remove="true"/>
 
-        <referenceBlock name="report.bugs" remove="true" />
-        <referenceBlock name="top.search" remove="true" />
-
-        <referenceBlock name="my-account-link" remove="true" />
-        <referenceBlock name="catalog.compare.link" remove="true" />
-        <referenceBlock name="minicart" remove="true" />
 
         <referenceBlock name="top.links">
             <block class="Magento\Theme\Block\Html\Header" name="header.other" as="header.other" after="header">
