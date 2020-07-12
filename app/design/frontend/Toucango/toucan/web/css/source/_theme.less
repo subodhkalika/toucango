@@ -131,40 +131,42 @@
     }
   }
 }
-//
-//  Common
-//  _____________________________________________
 
-& when (@media-common = true) {
-
-  .button-container {
-    //margin-bottom: 20px;
-    .action, a.action.button {
-      margin-left: 5px;
-    }
-  }
-  //
-  // Buttons
-  // ---------------------------------------------
-  a.action, button {
-    text-transform: uppercase;
-    letter-spacing: .1em;
-    border-radius: 3px;
-  }
-
-  //
-  // Secondary button
-  // ---------------------------------------------
-  a.action.button {
-    .lib-link-as-button();
-    .lib-button();
-
-    background-color: @color-white;
-    border: 1px solid @color-grey-1;
-    color: @color-primary;
-    box-shadow: 3px 3px @color-gray80;
+.button-container {
+  //margin-bottom: 20px;
+  .action, a.action.button {
+    margin-left: 5px;
   }
 }
+//
+// Buttons
+// ---------------------------------------------
+a.action, button {
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  border-radius: 3px;
+}
+
+//
+// Secondary button
+// ---------------------------------------------
+a.action.button {
+  .lib-link-as-button();
+  .lib-button();
+
+  background-color: @color-white;
+  border: 1px solid @color-grey-1;
+  color: @color-primary;
+  box-shadow: 3px 3px @color-gray80;
+}
+// //
+// //  Common
+// //  _____________________________________________
+
+// & when (@media-common = true) {
+
+  
+// }
 
 
 //

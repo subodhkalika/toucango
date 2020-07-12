@@ -3,7 +3,7 @@
     <body>
         <referenceBlock name="logo">
             <arguments>
-                <argument name="logo_file" xsi:type="string">images/birdlogo.jpg</argument>
+                <argument name="logo_file" xsi:type="string">images/toucango logo discounted experiences products melbourne.png</argument>
                 <argument name="logo_alt" xsi:type="string">Toucango</argument>
                 <argument name="logo_img_width" xsi:type="number">125</argument>
                 <argument name="logo_img_height" xsi:type="number">52</argument>
