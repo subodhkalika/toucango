@@ -99,11 +99,11 @@ border-bottom: 1px dotted #FFFFFF;
 }
 
 .header-1-style .header-bottom{
-background-color: #5aaea1;
+background-color: #ffffff;
 }
 
 .header-1-style .desktop-menu .navigation .level0 > .level-top{
-color: #FFFFFF;
+color: #222;
 }
 
 .header-1-style .block-right .block-content > .header.links > li > a:hover{

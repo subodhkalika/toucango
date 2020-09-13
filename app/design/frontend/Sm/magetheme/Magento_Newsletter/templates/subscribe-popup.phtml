@@ -16,12 +16,12 @@
               method="post"
               data-mage-init='{"validation": {"errorClass": "mage-error"}}'
               id="newsletter-popup-validate-detail">
-            <div class="w-newsletter clearfix">
+            <div class="w-newsletter clearfix d-flex align-items-center">
                 <div class="newsletter-image">
                     <?php echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('newsletter-popup-image')->toHtml(); ?>
                 </div>
 
-                <div class="newsletter-info">
+                <div class="newsletter-info info-news-pad">
                     <?php echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('newsletter-popup-description')->toHtml(); ?>
 
                     <div class="form-newsletter-popup">

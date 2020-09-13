@@ -3,25 +3,6 @@ $_config = $this->helper('Sm\Themecore\Helper\Data');
 ?>
 
 <div class="header-container header-style-1">
-    <div class="header-top">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8">
-                    <div class="customer-action">
-                        <?php echo $this->getChildHtml("welcome-customer"); ?>
-                    </div>
-                </div>
-
-                <div class="col-lg-4">
-                    <div class="language-currency">
-                        <?php echo $this->getChildHtml("store_language"); ?>
-                        <?php echo $this->getChildHtml("currency"); ?>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <div class="header-middle">
         <div class="container">
             <div class="middle-content">
@@ -69,10 +50,6 @@ $_config = $this->helper('Sm\Themecore\Helper\Data');
                         echo $this->getChildHtml("horizontal-css");
                     }
                     ?>
-                </div>
-
-                <div class="search-header">
-                    <?php echo $this->getChildHtml("search-header"); ?>
                 </div>
             </div>
         </div>

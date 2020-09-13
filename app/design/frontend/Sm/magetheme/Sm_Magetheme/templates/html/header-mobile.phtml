@@ -12,6 +12,7 @@
 
 $_config     = $this->helper('Sm\Magetheme\Helper\Data');
 $_configCore = $this->helper('Sm\Themecore\Helper\Data');
+$baseSrc     = $_config->getUrl();
 $mediaSrc    = $_config->getMediaUrl();
 $logoMobile  = $_configCore->getGeneral('mobile_layout/logo_mobile');
 $menuType    = $_configCore->getGeneral('navigation_group/menu_style');
@@ -73,6 +74,7 @@ $breakPoint  = $_configCore->getGeneral('mobile_layout/mobile_break_point');
             <div class="tab-panel fade show active" id="menu-mobile" role="tabpanel"
                  aria-labelledby="menu-mobile-tab">
                 <?php echo $this->getChildHtml("nav.mobile"); ?>
+                <div><a href="<?php echo $baseSrc . 'advertise-with-toucango/'; ?>" class="text-uppercase">Advertise with us</a></div>
             </div>
 
             <div class="tab-panel fade" id="account-mobile" role="tabpanel" aria-labelledby="account-mobile-tab">
