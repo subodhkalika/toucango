@@ -551,3 +551,7 @@
 .control input {
     background: transparent;
 }
+
+#mpbm-register {
+    margin-top: 25px;
+}
