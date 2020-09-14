@@ -532,7 +532,7 @@
 }
 
 .page-wrapper {
-    background: #000000bf;
+    background: rgba(0, 0, 0, 0);
     position: relative;
     overflow: hidden;
 }
@@ -546,6 +546,7 @@
 
 .control input {
     background: transparent;
+    border: 1px solid #000;
 }
 
 #mpbm-register {
@@ -555,3 +556,12 @@
     padding: 32px;
     border-radius: 5px;
 }
+
+#mpbm-register fieldset {
+    color: #ffffff;
+}
+
+#mpbm-register .password-strength-meter {
+    background-color: transparent;
+}
+
