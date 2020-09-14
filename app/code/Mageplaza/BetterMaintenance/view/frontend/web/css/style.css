@@ -505,7 +505,7 @@
 }
 
 #mpbm-page-title {
-    margin: 40px 0 0 0;
+    margin: 20px 0 0 0;
 }
 
 .mpbm-wrapper li {
@@ -532,7 +532,7 @@
 }
 
 .page-wrapper {
-    background: #0000009e;
+    background: #000000bf;
     position: relative;
     overflow: hidden;
 }

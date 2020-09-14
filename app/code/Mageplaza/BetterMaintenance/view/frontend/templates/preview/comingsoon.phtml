@@ -31,6 +31,27 @@ $data = $block->getFormData();
 <!--WRAPPER-->
 <div id="mpbm-<?= /* @noEscape */ $block->getPageLayout('[comingsoon_layout]') ?>-column" class="mpbm-wrapper mpbm-preview-wrapper">
 
+    <!--    Subscribe area-->
+    <?php if (array_key_exists('[subscribe_label]', $data) && $block->getSubscribeType() !== 'none') : ?>
+        <?php if ($block->getSubscribeType() === 'email_form') : ?>
+            <div id="mpbm-subscribe" class="mpbm-subscribe-box">
+                <?php if ($block->getSubscribeDes()) : ?>
+                    <h4 style="color: <?= /* @noEscape */ $block->getSubscribeDesColor() ?>">
+                        <?= /* @noEscape */ $block->getSubscribeDes() ?></h4>
+                <?php endif; ?>
+                <?= /* @noEscape */ $block->getChildHtml('subscribe') ?>
+            </div>
+        <?php elseif ($block->getSubscribeType() === 'register_form') : ?>
+            <div id="mpbm-register" class="mpbm-subscribe-box">
+                <?php if ($block->getSubscribeDes()) : ?>
+                    <h4 style="color: <?= /* @noEscape */ $block->getSubscribeDesColor() ?>">
+                        <?= /* @noEscape */ $block->getSubscribeDes() ?></h4>
+                <?php endif; ?>
+                <?= /* @noEscape */ $block->getChildHtml('register') ?>
+            </div>
+        <?php endif; ?>
+    <?php endif; ?>
+
     <!--    Logo-->
     <div id="mpbm-logo">
         <img src="<?= $block->escapeHtmlAttr($block->getLogo()) ?>"
@@ -52,27 +73,6 @@ $data = $block->getFormData();
         <div id="mpbm-clock">
             <?= /* @noEscape */ $block->getClockBlock() ?>
         </div>
-    <?php endif; ?>
-
-    <!--    Subscribe area-->
-    <?php if (array_key_exists('[subscribe_label]', $data) && $block->getSubscribeType() !== 'none') : ?>
-        <?php if ($block->getSubscribeType() === 'email_form') : ?>
-            <div id="mpbm-subscribe" class="mpbm-subscribe-box">
-                <?php if ($block->getSubscribeDes()) : ?>
-                    <h4 style="color: <?= /* @noEscape */ $block->getSubscribeDesColor() ?>">
-                        <?= /* @noEscape */ $block->getSubscribeDes() ?></h4>
-                <?php endif; ?>
-                <?= /* @noEscape */ $block->getChildHtml('subscribe') ?>
-            </div>
-        <?php elseif ($block->getSubscribeType() === 'register_form') : ?>
-            <div id="mpbm-register" class="mpbm-subscribe-box">
-                <?php if ($block->getSubscribeDes()) : ?>
-                    <h4 style="color: <?= /* @noEscape */ $block->getSubscribeDesColor() ?>">
-                        <?= /* @noEscape */ $block->getSubscribeDes() ?></h4>
-                <?php endif; ?>
-                <?= /* @noEscape */ $block->getChildHtml('register') ?>
-            </div>
-        <?php endif; ?>
     <?php endif; ?>
 
     <!--    Social area-->

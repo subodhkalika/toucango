@@ -35,7 +35,7 @@ $subscribeLabelColor = $block->getSubscribeSetting('subscribe_label_color');
     <!--    Logo-->
     <div id="mpbm-logo">
         <img src="<?= $block->escapeHtmlAttr($block->getLogo($block->getComingSoonSetting('comingsoon_logo'))) ?>" alt="<?= /* @noEscape */ __('Logo') ?>"
-             width="100">
+             width="100px">
     </div>
 
     <!--    Page Title Area-->
@@ -47,13 +47,6 @@ $subscribeLabelColor = $block->getSubscribeSetting('subscribe_label_color');
     <div id="mpbm-page-description" class="mpbm-text">
         <h3><?= /* @noEscape */ $block->getPageDescription('comingsoon_description') ?></h3>
     </div>
-
-    <!--    Clock area-->
-    <?php if ($block->getClockSetting('clock_enabled')) : ?>
-        <div id="mpbm-clock">
-            <?= /* @noEscape */ $block->getChildHtml('clock_countdown') ?>
-        </div>
-    <?php endif; ?>
 
     <!--    Subscribe area-->
     <?php if ($block->getSubscribeSetting('subscribe_type') === 'email_form') : ?>
@@ -69,6 +62,13 @@ $subscribeLabelColor = $block->getSubscribeSetting('subscribe_label_color');
                 <h4 style="color: <?= /* @noEscape */ $subscribeLabelColor ?>"><?= /* @noEscape */ $subscribeLabel ?></h4>
             <?php endif; ?>
             <?= /* @noEscape */ $block->getChildHtml('register') ?>
+        </div>
+    <?php endif; ?>
+
+    <!--    Clock area-->
+    <?php if ($block->getClockSetting('clock_enabled')) : ?>
+        <div id="mpbm-clock">
+            <?= /* @noEscape */ $block->getChildHtml('clock_countdown') ?>
         </div>
     <?php endif; ?>
 

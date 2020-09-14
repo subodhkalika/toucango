@@ -39,7 +39,7 @@
                 -moz-background-size: cover;
                 -o-background-size: cover;
                 background-size: cover;
-                transition-delay: 2s;
+                background-color: white;
             }
         </style>
         <script>
@@ -49,17 +49,21 @@
                 var images    = '<?= /* @noEscape */ $listImagesUrl ?>';
                 images        = images.split(',');
                 var nextImage = 0;
-                doSlideShow();
-
-                function doSlideShow () {
+                $(function () {
                     if (nextImage >= images.length) {
                         nextImage = 0;
                     }
-                    $('#mpbm-background')
-                    .fadeIn('slow', function () {
-                        setTimeout(doSlideShow, 5000);
-                    }).css('background-image', 'url("' + images[nextImage++] + '")');
-                }
+                    $('#mpbm-background').css('background-image', 'url("' + images[nextImage++] + '")')
+                    setInterval(function () {
+                        if (nextImage >= images.length) {
+                            nextImage = 0;
+                        }
+                        $('#mpbm-background').fadeOut("slow", function () {
+                            $('#mpbm-background').css('background-image', 'url("' + images[nextImage++] + '")')
+                            $(this).fadeIn("slow");
+                        });
+                    }, 6000);
+                });
             });
         </script>
     <?php endif; ?>

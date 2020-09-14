@@ -25,5 +25,8 @@
         <referenceContainer name="content">
             <block class="Mageplaza\BetterMaintenance\Block\Redirect" name="mpbettermaintenance.redirect" ifconfig="mpbettermaintenance/general/enabled"/>
         </referenceContainer>
+        <referenceContainer name="header.container" remove="true" />
+        <referenceBlock name="header.container" remove="true" />
+        <referenceBlock name="header" remove="true"/>
     </body>
 </page>
