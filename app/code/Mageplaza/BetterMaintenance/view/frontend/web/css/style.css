@@ -78,8 +78,8 @@
 }
 
 .circle {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     border: 1px solid #846add;
     border-radius: 50%;
     align-items: center;
@@ -92,14 +92,14 @@
 }
 
 .circle-txt1 {
-    font-size: 30px;
+    font-size: 50px;
     font-weight: 500;
     padding-bottom: 5px;
     font-family: Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica Neue, Arial, sans-serif;
 }
 
 .circle-txt2 {
-    font-size: 14px;
+    font-size: 20px;
     text-transform: uppercase;
 }
 
@@ -236,10 +236,6 @@
 /*Single column*/
 #mpbm-single-column {
     text-align: center;
-    margin: 32px;
-    border: 1px solid;
-    padding: 32px;
-    border-radius: 5px;
 }
 
 #mpbm-single-column #mpbm-subscribe .block.newsletter {
@@ -553,5 +549,9 @@
 }
 
 #mpbm-register {
-    margin-top: 25px;
+    text-align: center;
+    margin: 32px;
+    border: 1px solid;
+    padding: 32px;
+    border-radius: 5px;
 }
