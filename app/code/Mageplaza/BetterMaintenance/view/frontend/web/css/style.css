@@ -565,3 +565,7 @@
     background-color: transparent;
 }
 
+#mpbm-clock .circle.mp-countdown-clock {
+    border-color: #000000;
+}
+
