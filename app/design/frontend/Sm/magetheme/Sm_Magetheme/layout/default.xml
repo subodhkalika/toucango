@@ -67,8 +67,8 @@
                 <block class="Magento\Theme\Block\Html\Topmenu" name="vertical-css"
                        template="Sm_Magetheme::html/menu-css/vertical-css.phtml"/>
 
-                <block class="Magento\Theme\Block\Html\Topmenu" name="horizontal-css"
-                       template="Sm_Magetheme::html/menu-css/horizontal-css.phtml"/>
+                <!-- <block class="Magento\Theme\Block\Html\Topmenu" name="horizontal-css"
+                       template="Sm_Magetheme::html/menu-css/horizontal-css.phtml"/> -->
             </block>
         </referenceContainer>
 

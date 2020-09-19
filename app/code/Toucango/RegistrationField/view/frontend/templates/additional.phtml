@@ -1,0 +1,57 @@
+<?php
+    $contactFieldLabel = __("Contact Number");
+    $contactField = "customer_contact_number";
+    $tncFieldLabel = __("I accept the ");
+    $tncField = "termsnc";
+    $genderFieldLabel = __("Gender");
+    $genderField = "customer_gender";
+    $ageFieldLabel = __("Age");
+    $ageField = "customer_age";
+?>
+<div class="field <?= $contactField ?> required">
+    <label class="label" for="<?= $contactField ?>">
+        <span><?= $block->escapeHtml($contactFieldLabel) ?></span>
+    </label>
+    <div class="control">
+        <input type="text" name="<?= $contactField ?>" id="<?= $contactField ?>" 
+            value=""
+            title="<?= $block->escapeHtmlAttr($contactFieldLabel) ?>"
+            class="input-text" data-validate="{required:true}">
+    </div>
+</div>
+
+<div class="field <?= $genderField ?> required">
+    <label class="label" for="<?= $genderField ?>">
+        <span><?= $block->escapeHtml($genderFieldLabel) ?></span>
+    </label>
+    <div class="control">
+        <input type="text" name="<?= $genderField ?>" id="<?= $genderField ?>" 
+               value=""
+               title="<?= $block->escapeHtmlAttr($genderFieldLabel) ?>"
+               class="input-text" data-validate="{required:true}">
+    </div>
+</div>
+
+<div class="field <?= $ageField ?> required">
+    <label class="label" for="<?= $ageField ?>">
+        <span><?= $block->escapeHtml($ageFieldLabel) ?></span>
+    </label>
+    <div class="control">
+        <input type="text" name="<?= $ageField ?>" id="<?= $ageField ?>"
+                value=""
+               title="<?= $block->escapeHtmlAttr($ageFieldLabel) ?>"
+               class="input-text" data-validate="{required:true}">
+    </div>
+</div>
+
+<div class="field <?= $tncField ?> required">
+    <div class="control">
+        <input type="checkbox" name="<?= $tncField ?>" id="<?= $tncField ?>" value="1"
+        title="<?= $block->escapeHtmlAttr($tncFieldLabel) ?>"
+        class="input-text" data-validate="{required:true}">
+        <label class="label" for="<?= $tncField ?>">
+            <span><?= $block->escapeHtml($tncFieldLabel) ?></span>
+            <a href="/tos">Terms And Conditions</a>
+        </label>
+    </div>
+</div>
