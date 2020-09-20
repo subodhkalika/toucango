@@ -568,3 +568,17 @@
 #mpbm-clock .circle.mp-countdown-clock {
     border-color: #000000;
 }
+
+
+
+.button-link {
+    background: #000;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.mpbm-subscribe-box {
+    margin-top: 15px;
+}

@@ -267,6 +267,7 @@ return [
         'Klarna_Kp' => 1,
         'Magento_PaypalReCaptcha' => 1,
         'MSP_TwoFactorAuth' => 1,
+        'MageTim_CreateAccount' => 1,
         'Magefan_Community' => 1,
         'Magefan_Blog' => 1,
         'Magefan_WysiwygAdvanced' => 1,

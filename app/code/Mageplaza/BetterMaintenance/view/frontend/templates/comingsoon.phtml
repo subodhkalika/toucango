@@ -49,21 +49,9 @@ $subscribeLabelColor = $block->getSubscribeSetting('subscribe_label_color');
     </div>
 
     <!--    Subscribe area-->
-    <?php if ($block->getSubscribeSetting('subscribe_type') === 'email_form') : ?>
-        <div id="mpbm-subscribe" class="mpbm-subscribe-box" data-mage-init='{"Mageplaza_BetterMaintenance/js/message/submit":{}}'>
-            <?php if ($block->getSubscribeSetting('subscribe_label')) : ?>
-                <h4 style="color: <?= /* @noEscape */ $subscribeLabelColor ?>"><?= /* @noEscape */ $subscribeLabel ?></h4>
-            <?php endif; ?>
-            <?= /* @noEscape */ $block->getChildHtml('subscribe') ?>
-        </div>
-    <?php elseif ($block->getSubscribeSetting('subscribe_type') === 'register_form') : ?>
-        <div id="mpbm-register" class="mpbm-subscribe-box">
-            <?php if ($block->getSubscribeSetting('subscribe_label')) : ?>
-                <h4 style="color: <?= /* @noEscape */ $subscribeLabelColor ?>"><?= /* @noEscape */ $subscribeLabel ?></h4>
-            <?php endif; ?>
-            <?= /* @noEscape */ $block->getChildHtml('register') ?>
-        </div>
-    <?php endif; ?>
+    <div id="mpbm-subscribe" class="mpbm-subscribe-box">
+        <a href="/customer/account/create" class="button-link">Register Now</a>
+    </div>
 
     <!--    Clock area-->
     <?php if ($block->getClockSetting('clock_enabled')) : ?>
