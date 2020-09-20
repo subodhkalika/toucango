@@ -43,15 +43,3 @@
                class="input-text" data-validate="{required:true}">
     </div>
 </div>
-
-<div class="field <?= $tncField ?> required">
-    <div class="control">
-        <input type="checkbox" name="<?= $tncField ?>" id="<?= $tncField ?>" value="1"
-        title="<?= $block->escapeHtmlAttr($tncFieldLabel) ?>"
-        class="input-text" data-validate="{required:true}">
-        <label class="label" for="<?= $tncField ?>">
-            <span><?= $block->escapeHtml($tncFieldLabel) ?></span>
-            <a href="/tos">Terms And Conditions</a>
-        </label>
-    </div>
-</div>

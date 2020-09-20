@@ -50,7 +50,7 @@ class InstallData implements \Magento\Framework\Setup\InstallDataInterface
 
         $eavSetup->removeAttribute(Customer::ENTITY, $contactField);
         $eavSetup->removeAttribute(Customer::ENTITY, $genderField);
-
+        $eavSetup->removeAttribute(Customer::ENTITY, $ageField);
         $attributeSetId = $eavSetup->getDefaultAttributeSetId(Customer::ENTITY);
         $attributeGroupId = $eavSetup->getDefaultAttributeGroupId(Customer::ENTITY);
 
