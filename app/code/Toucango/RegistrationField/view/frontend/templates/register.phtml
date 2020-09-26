@@ -11,12 +11,12 @@
 <?= $block->getChildHtml('customer.form.register.extra') ?>
 <div class="flex-it-div">
     <div class="content-div">
-        <img src="<?php echo $this->getViewFileUrl('Toucango_RegitrationField::images/hamper.jpg'); ?>" alt="hamper">
+    <img class="hamper-image" src="<?php echo $this->getViewFileUrl('Toucango_RegistrationField::media/hamper.jpg'); ?>" />
         <p>To celebrate a launch of Toucango, a provider of amazing experiences and product deals, we are giving away a Christmas Hamper Worth over $500!</p>
         <p>When you sign-up to toucango.com.au for free between September the 21st and December the 20th, 2020, you will automatically go in the draw to win an amazing Christmas gift Hamper! 🎅🎄</p>
         <p>This hamper is worth over $500 and contains all sorts of Christmas delights to enjoy with your family and friends this Christmas. At toucango.com.au We love good products and fresh produce</p>
         <p>Competition winners will be announced on Monday midday, the 21st of December, 2020! Remember, you gotta be in it to win it! 🤞🤞</p>
-        <p>*T&C's found here: </p>
+        <p><a href="<?php echo $this->getUrl('terms-and-conditions');?>">Terms & Conditions</a></p>
         Good Luck!
     </div>
     <div>
