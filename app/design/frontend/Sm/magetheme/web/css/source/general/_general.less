@@ -1981,17 +1981,41 @@ body .page-wrapper > .page-bottom {
     .page-title {
         color: #5f5f5f;
         font-size: 30px;
+        text-transform: none;
     }
 }
-.hamper-image {
+.hamper-image-desktop, .hamper-image {
     padding: 32px;
     padding-top: 0;
+}
+.hamper-image-mobile {
+    display: none;
 }
 @media (max-width: 480px) {
     .content-div {
         padding-top: 0;
+        padding-bottom: 20px;
     }
     .flex-it-div {
         display: block;
+        padding-top: 20px;
     }
+    .customer-account-create {
+        .page-title {
+            color: #5f5f5f;
+            font-size: 20px;
+            text-transform: none;
+            text-align: left;
+        }
+    }
+    .hamper-image-desktop {
+        display: none;
+    }
+    .hamper-image-mobile {
+        padding-top: 30px;
+        display: block;
+    }
+}
+.blue-color {
+    color: #006bb4;
 }
