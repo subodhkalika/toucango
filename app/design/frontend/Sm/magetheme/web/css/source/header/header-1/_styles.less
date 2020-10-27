@@ -205,7 +205,7 @@
 }
 
 .desktop-menu .navigation {
-    background: none;
+    background: #363636;
     font-weight: unset;
 
     .ui-menu-icon {
@@ -272,7 +272,7 @@
     .level0.active > .level-top,
     .level0.has-active > .level-top,
     .level0:hover > .level-top {
-        background-color: rgba(0, 0, 0, 0.1);
+        background-color: #505050;
     }
 
 }
@@ -330,7 +330,7 @@
 
 .block-right {
     float: left;
-    margin-left: 50px;
+    margin-left: 0px;
     padding-left: 47px;
     position: relative;
 
@@ -350,6 +350,7 @@
             margin: 0;
             padding: 0;
             list-style: none;
+            color: #fff;
 
             > li {
                 display: inline-block;
@@ -368,7 +369,7 @@
                 }
 
                 > a {
-                    color: #aaa;
+                    color: #fff;
                 }
             }
         }
@@ -408,11 +409,12 @@
 .minicart-header .minicart-wrapper {
     margin: 0 0 0 50px !important;
     padding: 0 !important;
+    margin-left: 0 !important;
 
     .action.showcart {
         position: relative;
         padding-left: 57px;
-
+        margin-bottom: 0;
         .subtotal .label,
         &:before {
             display: none !important;
@@ -420,10 +422,10 @@
 
         &:after {
             position: absolute;
-            top: -5px;
+            top: -2px;
             left: 0;
-            color: #ccc;
-            .icomoon(e958, 36px);
+            color: #fff;
+            .icomoon(e958, 18px);
         }
 
         .text {
@@ -441,17 +443,17 @@
             line-height: 21px;
             font-size: 85.714%;
             position: absolute;
-            top: -5px;
+            top: -2px;
             left: 26px;
             z-index: 5;
-            background-color: #ff4157;
-            color: #fff;
+            background-color: #fff;
+            color: #ed9b2c;
             .border-radius(11px);
         }
 
         .price-container .price {
             font-size: 100%;
-            color: #ff4157;
+            color: #fff;
         }
     }
 

@@ -1,0 +1,565 @@
+<style>
+    .tcg-category-image-subtitle {
+        width: 300px;
+        padding: 0 40px;
+        font-size: 14px;
+        line-height: 20px;
+        color: #fff;
+    }
+    .tcg-category-image {
+        border-radius: 10px;
+    }
+    .tcg-category-image-title {
+        width: 300px;
+        padding: 0 40px;
+        font-size: 24px;
+        line-height: 32px;
+        color: #fff;
+    }
+    .tcg-category-image-text {
+        position: absolute;
+        bottom: 10%;
+        font-size: 20px;
+        font-weight: 600;
+        color: #fff;
+        letter-spacing: 1.5px;
+    }
+    .bg-orange {
+        background-color: #ed9b2c;
+    }
+    .bg-green {
+        background-color: #5aab90;
+    }
+    .bg-gray-darker {
+        background-color: #363636;
+    }
+    .bg-gray {
+        background-color: #909090;
+    }
+    .bg-white {
+        background-color: #fff;
+    }
+    .text-green {
+        color: #5aab90;
+    }
+    .text-orange {
+        color: #ed9b2c;
+    }
+    .text-white {
+        color: #fff;
+    }
+    .text-gray {
+        color: #909090;
+    }
+    .b-separator-right {
+        border-right: 1px solid;
+    }
+    .b-color-white {
+        border-color: #fff;
+    }
+    .z-index-1 {
+        z-index: 1;
+    }
+    .width-20 {
+        width: 20%;
+    }
+    /*
+        home page specific
+    */
+    .section-margin {
+        margin-bottom: 50px;
+    }
+    /*
+        header-info section
+    */
+    .header-left {
+        margin-left: 100px;
+    }
+    .header-right {
+        margin-right: 100px;
+    }
+
+    /*
+        Nav section
+    */
+    .logo-width {
+        width: 50px;
+    }
+
+
+    /*
+        Banner section
+    */
+    .main-banner {
+        position: relative;
+    }
+    .banner-float-img {
+        position: absolute;
+        right: 160px;
+        top: -10px;
+    }
+    .small-banner {
+        padding: 32px 24px;
+    }
+
+    /*
+        Home icons section
+    */
+    .home-icons-section {
+        padding: 32px 200px;
+    }
+
+    /*
+        Trending Section
+    */
+    .section-title {
+        font-size: 32px;
+        text-transform: uppercase;
+        color: #444;
+    }
+    .section-sub-title {
+        font-size: 16px;
+        text-transform: capitalize;
+        color: #848484;
+        width: 400px;
+        margin: auto;
+        margin-top: 32px;
+        margin-bottom: 32px;
+    }
+
+
+    /*
+        Season
+    */
+    .season-b-wrapper {
+        background-image: url('{{media url=&quot;assets/Season-Sale/2.png&quot;}}');
+        padding: 32px;
+        text-align: center;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    .opacity-dot8 {
+        opacity: 0.8;
+    }
+    .sb-shop-now-button {
+        border: 1px solid #ed9b2c;
+        padding: 7px 100px;
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    /*
+        Greeting card banner
+    */
+    .greeting-card-b-wrapper {
+        background-image: url('{{media url=&quot;assets/Greeting-card-banner/Greeting card banner.png&quot;}}');
+        padding: 70px;
+        text-align: center;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    .small-banner .card {
+        padding: 48px 24px;
+        width: 545px;
+    }
+    .small-banner .card .card-title {
+        color: #fff;
+        font-size: 38px;
+        margin-bottom: -5px;
+    }
+    .small-banner .card .card-sub-title {
+        color: #fff;
+        opacity: 0.8;
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+    .small-banner .card-left {
+        background-image: url('{{media url=&quot;assets/Cards/2.png&quot;}}');
+        margin-right: 32px;
+    }
+    .small-banner .card-right {
+        background-image: url('{{media url=&quot;assets/Cards/3.png&quot;}}');
+    }
+    .a-card-button {
+        font-size: 22px;
+        padding: 10px 30px;
+        background-color: #fff;
+    }
+    .main-banner {
+        background-image: url('{{media url=&quot;assets/Header/1.png&quot;}}');
+        position: relative;
+        background-repeat: no-repeat;
+        background-position: left center;
+        padding: 107px;
+    }
+    .banner-title {
+        font-size: 48px;
+        color: #fff;
+        width: 500px;
+        text-transform: uppercase;
+        line-height: 1.2;
+    }
+    .banner-sub-title {
+        width: 500px;
+        font-size: 18px;
+        color: #fff;
+    }
+    .banner-button {
+        margin-top: 32px;
+    }
+    .a-banner-button {
+        font-size: 24px;
+        background-color: #ed9b2c;
+        color: #fff;
+        padding: 10px 60px;
+    }
+    .trending-card-right-m {
+        margin-right: 15px
+    }
+    .trending-now-card {
+        position: relative;
+    }
+    .tnc-card-content {
+        position: absolute;
+        bottom: 32px;
+        left: 24px
+    }
+    .tnc-card-content .tnc-title {
+        color: #fff;
+        font-size: 22px;
+    }
+    .tnc-card-content .tnc-sub-title {
+        color: #fff;
+        font-size: 16px;
+        opacity: 0.7;
+    }
+    .popular-filters-tab {
+        margin-bottom: 32px;
+    }
+
+    /*
+        Newsletter
+     */
+    .newsletter-section {
+        padding: 32px 100px;
+        background: #f2f2f2;
+        display: flex;
+        justify-content: space-between;
+    }
+    .newsletter-content-section {
+        width: 250px;
+    }
+    .newsletter-content-title {
+        font-size: 16px;
+        font-weight: bold;
+        color: #000;
+    }
+    .newsletter-content-sub-title{
+        font-size: 16px;
+        color: #000;
+    }
+    .newsletter-section .newsletter-content {
+        display: table;
+        width: 100%;
+        padding-top: 4px;
+    }
+    .newsletter-input-section {
+        width: 600px;
+    }
+    .newsletter-section .input-box {
+        display: table-cell;
+        vertical-align: top;
+        width: 100%;
+    }
+    #newsletter-footer {
+        height: 44px;
+        background-color: #fff;
+        border: none;
+        padding: 0 15px;
+        color: #222;
+        border-radius:4px 0 0 4px;
+    }
+    .action-button {
+        display: table-cell;
+        vertical-align: top;
+    }
+    .action-button .action-button-primary {
+        background: #009c7b;
+        padding: 7px 40px;
+        padding-top: 0;
+    }
+    .action-button button {
+        padding: 0 20px;
+        height: 44px;
+        line-height: 44px;
+        text-transform: uppercase;
+        border-radius: 0 4px 4px 0;
+    }
+    .show-me-more-button {
+        text-align: center;
+    }
+    .show-me-more-button a {
+        padding: 7px 30px;
+        font-size: 16px;
+        text-transform: uppercase;
+        border: 1px solid #444;
+        color: #444;
+        background: #fff;
+    }
+    .show-me-more-button a:hover {
+        background: #ed9b2c;
+        color: #fff;
+    }
+    .best-deals-products .products-grid .product-item {
+        margin-bottom: 13px;
+    }
+    .home-page-1 {
+        padding-top: 20px;
+    }
+    @media (max-width: 767px) {
+        .home-page-1 {
+            padding: 0;
+            padding-top: 0;
+        }
+        .container-wrapper {
+            margin: 0;
+            margin-left: 0;
+            margin-right: 0;
+            width: 100%;
+        }
+        .main-banner {
+            padding-top: 55px;
+            text-align: center;
+            justify-content: center;
+            width: 100%;
+            padding-bottom: 500px;
+            background-position: left top;
+        }
+        .banner-title, .banner-sub-title {
+            width: 100%;
+            margin: auto;
+        }
+        .banner-float-img {
+            width: 90%;
+            top: unset;
+            right: unset;
+            left: 5%;
+            right: 5%;
+            margin-top: 55px;
+        }
+        .small-banner {
+            display: block !important;
+            padding: 5%;
+        }
+        .small-banner .card-left, .small-banner .card-right {
+            width: 100%;
+            margin: unset;
+            margin-bottom: 32px;
+        }
+        .newsletter-section {
+            padding: 5%;
+            display: block;
+        }
+        .newsletter-content {
+            width: 100%;
+            margin: auto;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        .newsletter-input-section {
+            width: 100%;
+            display: block;
+        }
+        .greeting-card-b-wrapper {
+            background-repeat: no-repeat;
+            background-position: left top;
+            background-size: cover;
+        }
+        .greeting-card-b-wrapper .sb-shop-now-button{
+            padding: 7px 50px;
+        }
+        
+    }
+</style>
+<div class="home-page-1 title-block-1 bottom-title">
+	<div class="container container-wrapper">
+        <div class="main-banner">
+            <div class="banner-title">
+                Most amazing experiences.
+            </div>
+            <div class="banner-sub-title">
+                And with Toucango, the prices are lower than ever. Your next adventure awaits!
+            </div>
+            <div class="banner-button">
+                <a href="#" class="a-banner-button">Find Deals</a>
+            </div>
+            <img src="{{media url=&quot;assets/Header/3.png&quot;}}" class="banner-float-img">
+        </div>
+        <div class="small-banner d-flex justify-content-between">
+            <div class="card card-left">
+                <div class="card-title">
+                    Christmas
+                </div>
+                <div class="card-sub-title">
+                    Greeting Cards
+                </div>
+                <div class="card-button">
+                    <a href="#" class="a-card-button">Shop Now</a>
+                </div>
+            </div>
+            <div class="card card-right">
+                <div class="card-title">
+                    Birthday
+                </div>
+                <div class="card-sub-title">
+                    Greeting Cards
+                </div>
+                <div class="card-button">
+                    <a href="#" class="a-card-button">Shop Now</a>
+                </div>
+            </div>
+        </div>
+        <div class="home-icons-section d-flex justify-content-between section-margin">
+            <div class="home-icon">
+                <img src="{{media url=&quot;assets/Categories/1.png&quot;}}">
+            </div>
+            <div class="home-icon">
+                <img src="{{media url=&quot;assets/Categories/2.png&quot;}}">
+            </div>
+            <div class="home-icon">
+                <img src="{{media url=&quot;assets/Categories/3.png&quot;}}">
+            </div>
+            <div class="home-icon">
+                <img src="{{media url=&quot;assets/Categories/4.png&quot;}}">
+            </div>
+            <div class="home-icon">
+                <img src="{{media url=&quot;assets/Categories/5.png&quot;}}">
+            </div>
+        </div>
+        <div class="trending-section section-margin">
+            <div class="section-title text-center mb-4">
+                Trending Now
+            </div>
+            <div class="trending-cards d-flex justify-content-between">
+                <div class="trending-now-card trending-card-right-m">
+                    <img src="{{media url=&quot;assets/Trending-now/1.png&quot;}}">
+                    <div class="tnc-card-content">
+                        <div class="tnc-title">Experience for couples</div>
+                        <div class="tnc-sub-title">Connecting through experience</div>
+                    </div>
+                </div>
+                <div class="trending-now-card trending-card-right-m">
+                    <img src="{{media url=&quot;assets/Trending-now/2.png&quot;}}">
+                    <div class="tnc-card-content">
+                        <div class="tnc-title">Birthday Gifts</div>
+                        <div class="tnc-sub-title">Gifts to remember</div>
+                    </div>
+                </div>
+                <div class="trending-now-card">
+                    <img src="{{media url=&quot;assets/Trending-now/3.png&quot;}}">
+                    <div class="tnc-card-content">
+                        <div class="tnc-title">Gift Voucher</div>
+                        <div class="tnc-sub-title">Can't deside? Let them choose</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="popular-section section-margin">
+            <div class="section-title text-center mb-4">
+                Popular Now
+            </div>
+            <div class="popular-filters-tab d-flex justify-content-center">
+                <div class="m-3 text-orange">All</div>
+                <div class="m-3 text-gray">Trending</div>
+                <div class="m-3 text-gray">Bestseller</div>
+                <div class="m-3 text-gray">New</div>
+                <div class="m-3 text-gray">Onsale</div>
+            </div>
+            <div class="slider-product-home" style="margin-bottom: 20px;">
+                <div class="stagepadding-slider nav-style-2">
+                    <div data-owl="owl-slider" data-autoplay="false" data-nav="false" data-dots="false" data-screen0="1" data-screen481="2" data-screen768="3" data-screen992="3" data-screen1200="4" data-screen1441="4" data-screen1681="4" data-screen1920="4" data-margin="30" data-autoplayhoverpause="true" data-loop="false" data-center="false" data-stagepadding="15" data-mousedrag="false" data-touchdrag="false">
+                        {{block class="Sm\FilterProducts\Block\FilterProducts" template="Sm_FilterProducts::slider.phtml" title_module="no_title" product_source="best_sellers" select_category="4,5,6,14,15,16,17,18,19,23,24,25,26,27,28,34,35,36,40,6,30,31,32,33,37,41" product_limitation="6" display_countdown="0" date_to=""}}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="newsletter-section section-margin">
+            <div class="newsletter-content-section">
+                <div class="newsletter-content-title">
+                    Become a VIP & get $10 off
+                </div>
+                <div class="newsletter-content-sub-title">
+                    Subscribe to our newsletter and save on your next purchase
+                </div>
+            </div>
+            <div class="newsletter-input-section">
+                {{block class="Magento\Newsletter\Block\Subscribe" template="subscribe-footer.phtml"}}
+            </div>
+        </div>
+        <div class="popular-section section-margin">
+            <div class="section-title text-center mb-2">
+                OUR BEST DEALS
+            </div>
+            <div class="section-sub-title text-center">
+                Grab the best toucn go deals today.
+                Amazing deals at your fingertips.
+            </div>
+            <div class="popular-filters-tab d-flex justify-content-center">
+                <div class="m-3 text-orange">NEW</div>
+                <div class="m-3 text-gray">FEATURED</div>
+                <div class="m-3 text-gray">SPECIAL</div>
+                <div class="m-3 text-gray">UPCOMMING</div>
+            </div>
+            <div class="slider-product-home best-deals-products">
+                <div class="stagepadding-slider nav-style-2">
+                    <div data-owl="owl-slider" data-autoplay="false" data-nav="false" data-dots="false" data-screen0="1" data-screen481="2" data-screen768="3" data-screen992="3" data-screen1200="4" data-screen1441="4" data-screen1681="4" data-screen1920="4" data-margin="30" data-autoplayhoverpause="true" data-loop="false" data-center="false" data-stagepadding="15" data-mousedrag="false" data-touchdrag="false">
+                        {{block class="Sm\FilterProducts\Block\FilterProducts" template="Sm_FilterProducts::slider.phtml" title_module="no_title" product_source="best_sellers" select_category="4,5,6,14,15,16,17,18,19,23,24,25,26,27,28,34,35,36,40,6,30,31,32,33,37,41" product_limitation="6" display_countdown="0" date_to=""}}
+                    </div>
+                </div>
+            </div>
+            <div class="slider-product-home" style="margin-bottom: 20px;">
+                <div class="stagepadding-slider nav-style-2">
+                    <div data-owl="owl-slider" data-autoplay="false" data-nav="false" data-dots="false" data-screen0="1" data-screen481="2" data-screen768="3" data-screen992="3" data-screen1200="4" data-screen1441="4" data-screen1681="4" data-screen1920="4" data-margin="30" data-autoplayhoverpause="true" data-loop="false" data-center="false" data-stagepadding="15" data-mousedrag="false" data-touchdrag="false">
+                        {{block class="Sm\FilterProducts\Block\FilterProducts" template="Sm_FilterProducts::slider.phtml" title_module="no_title" product_source="best_sellers" select_category="4,5,6,14,15,16,17,18,19,23,24,25,26,27,28,34,35,36,40,6,30,31,32,33,37,41" product_limitation="6" display_countdown="0" date_to=""}}
+                    </div>
+                </div>
+            </div>
+            <div class="show-me-more-button">
+                <a href="#">Show me more</a>
+            </div>
+        </div>
+        <div class="season-banner section-margin">
+            <div class="season-b-wrapper text-white">
+                <div class="sb-top opacity-dot8"><h2>SEASON SALE</h2></div>
+                <div class="sb-main"><h1>UP TO 70% OFF</h1></div>
+                <div class="sb-bottom"><button class="bg-orange text-white sb-shop-now-button">Shop Now</button></div>
+            </div>
+        </div>
+        <div class="popular-section section-margin">
+            <div class="section-title text-center mb-4">
+                NEW COLLECTION
+            </div>
+            <div class="popular-filters-tab d-flex justify-content-center">
+                <div class="m-3 text-orange">All</div>
+                <div class="m-3 text-gray">Trending</div>
+                <div class="m-3 text-gray">Bestseller</div>
+                <div class="m-3 text-gray">New</div>
+                <div class="m-3 text-gray">Onsale</div>
+            </div>
+            <div class="slider-product-home" style="margin-bottom: 20px;">
+                <div class="stagepadding-slider nav-style-2">
+                    <div data-owl="owl-slider" data-autoplay="false" data-nav="false" data-dots="false" data-screen0="1" data-screen481="2" data-screen768="3" data-screen992="3" data-screen1200="4" data-screen1441="4" data-screen1681="4" data-screen1920="4" data-margin="30" data-autoplayhoverpause="true" data-loop="false" data-center="false" data-stagepadding="15" data-mousedrag="false" data-touchdrag="false">
+                        {{block class="Sm\FilterProducts\Block\FilterProducts" template="Sm_FilterProducts::slider.phtml" title_module="no_title" product_source="best_sellers" select_category="4,5,6,14,15,16,17,18,19,23,24,25,26,27,28,34,35,36,40,6,30,31,32,33,37,41" product_limitation="6" display_countdown="0" date_to=""}}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="greeting-card-banner section-margin">
+            <div class="greeting-card-b-wrapper text-white">
+                <div class="sb-top opacity-dot8"><h2>Send or print an</h2></div>
+                <div class="sb-main"><h1>GIFT CARD</h1></div>
+                <div class="sb-bottom"><button class="bg-white b-color-white sb-shop-now-button">Shop Now</button></div>
+            </div>
+        </div>
+	</div>
+</div>

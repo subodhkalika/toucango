@@ -276,6 +276,7 @@ return [
         'Sm_FilterProducts' => 1,
         'Sm_Magetheme' => 1,
         'Sm_Themecore' => 1,
+        'StripeIntegration_Payments' => 1,
         'Temando_ShippingRemover' => 1,
         'Toucango_RegistrationField' => 1,
         'Vertex_Tax' => 1,

@@ -99,11 +99,11 @@ border-bottom: 1px dotted #FFFFFF;
 }
 
 .header-1-style .header-bottom{
-background-color: #ffffff;
+    background-color: #363636;
 }
 
 .header-1-style .desktop-menu .navigation .level0 > .level-top{
-color: #222;
+color: #fff;
 }
 
 .header-1-style .block-right .block-content > .header.links > li > a:hover{
@@ -164,6 +164,7 @@ color: #FFFFFF!important;
 
 .sidebar .block .block-title{
 background-color: #0088CC;
+background-color: #ed9b2c;
 color: #FFFFFF;
 }
 
@@ -181,6 +182,8 @@ color: #FFFFFF;
 .product-1-style .products-grid .product-item-info .product-item-details .product-item-actions .actions-primary .tocart:hover{
 background-color: #0088CC;
 color: #FFFFFF;
+background: #ff8a00;
+color: #fff;
 }
 
 /**
@@ -221,6 +224,7 @@ color: #FFFFFF;
 .product-info-main .box-tocart .action.tocart:hover,
 .product-options-bottom .box-tocart .action.tocart:hover{
 background-color: #007fbe;
+background: #ff8a00;
 }
 
 /**

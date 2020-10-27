@@ -272,7 +272,7 @@
     .level0.active > .level-top,
     .level0.has-active > .level-top,
     .level0:hover > .level-top {
-        background-color: rgba(0, 0, 0, 0.1);
+        background-color: #fff;
     }
 
 }
@@ -331,7 +331,7 @@
 
 .block-right {
     float: right;
-    margin-right: 50px;
+    margin-right: 0px;
     padding-right: 47px;
     position: relative;
 
@@ -409,10 +409,11 @@
 .minicart-header .minicart-wrapper {
     margin: 0 50px 0 0 !important;
     padding: 0 !important;
-
+    margin-left: 0 !important;
     .action.showcart {
         position: relative;
         padding-right: 57px;
+        margin-bottom: 0;
 
         .subtotal .label,
         &:before {
@@ -421,10 +422,10 @@
 
         &:after {
             position: absolute;
-            top: -5px;
+            top: -2px;
             right: 0;
-            color: #ccc;
-            .icomoon(e958, 36px);
+            color: #fff;
+            .icomoon(e958, 18px);
         }
 
         .text {
@@ -442,17 +443,17 @@
             line-height: 21px;
             font-size: 85.714%;
             position: absolute;
-            top: -5px;
+            top: -2px;
             right: -11px;
             z-index: 5;
-            background-color: #ff4157;
-            color: #fff;
+            background-color: #fff;
+            color: #ed9b2c;
             .border-radius(11px);
         }
 
         .price-container .price {
             font-size: 100%;
-            color: #ff4157;
+            color: #fff;
         }
     }
 
