@@ -48,15 +48,7 @@ $breakPoint  = $_configCore->getGeneral('mobile_layout/mobile_break_point');
     </div>
     <div class="mobile-header-bottom bg-gray-darker text-white p-3">
         <div class="container">
-            <div class="mobile-header-content d-flex">
-                <div class="mobile-menu">
-                    <a id="btn-nav-mobile" href="javascript:void(0);">
-                        <span class="s-top"></span>
-                        <span class="s-middle"></span>
-                        <span class="s-bottom"></span>
-                    </a>
-                </div>
-
+            <div class="mobile-header-content d-flex justify-content-between">
                 <div class="mobile-logo">
                     <a href="<?php echo $this->getUrl('') ?>">
                         <img src="<?php echo $mediaSrc . 'logomobile/' . $logoMobile; ?>"
@@ -68,6 +60,13 @@ $breakPoint  = $_configCore->getGeneral('mobile_layout/mobile_break_point');
                 </div>
                 <div class="mobile-bottom">
                     <?php echo $this->getChildHtml("topSearchMobile"); ?>
+                </div>
+                <div class="mobile-menu">
+                    <a id="btn-nav-mobile" href="javascript:void(0);">
+                        <span class="s-top"></span>
+                        <span class="s-middle"></span>
+                        <span class="s-bottom"></span>
+                    </a>
                 </div>
             </div>
         </div>
