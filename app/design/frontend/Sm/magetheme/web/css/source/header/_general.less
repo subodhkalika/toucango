@@ -87,8 +87,8 @@
 
     .mobile-cart {
         position: absolute;
-        top: 0;
-        right: 65px;
+        top: -5px;
+        right: 10px;
         z-index: 200;
     }
 
@@ -108,8 +108,10 @@
                     max-width: unset;
                     width: 100%;
                     padding: 0 40px 0 10px;
-                    background: #fff !important;
-                    border: 1px solid #ddd !important;
+                    background: #8a8a8a !important;
+                    // border: 1px solid #ddd !important;
+                    border: unset !important;
+                    color: #ffffffab !important;
                     .border-radius(3px);
                 }
 
@@ -355,7 +357,7 @@
             }
 
             &:before {
-                .icomoon(e958, 26px);
+                .icomoon(e958, 20px);
                 color: #333;
                 line-height: 50px !important;
                 opacity: 1 !important;
@@ -486,5 +488,19 @@
 @media (max-width: 480px) {
     .minicart-wrapper .mage-dropdown-dialog {
         width: 290px;
+    }
+}
+.header-mobile{
+    .mobile-bottom {
+        .block-search-mobile {
+            .form.minisearch {
+                .actions {
+                    button {
+                        background: #5baea1;
+                        color: #fff;
+                    }
+                }
+            }
+        }
     }
 }

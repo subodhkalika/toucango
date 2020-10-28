@@ -21,33 +21,34 @@ $breakPoint  = $_configCore->getGeneral('mobile_layout/mobile_break_point');
 
 <div class="header-mobile" id="sm-header-mobile" data-menutype="<?php echo $menuType; ?>"
      data-breakpoint="<?php echo $breakPoint; ?>">
-        <div class="row d-flex justify-content-between align-items-center">    
-            <div class="">
-                <div class="header-info">
-                    info@toucango.com.au
+    <div class="mobile-header-wrap bg-orange text-white p-3">
+        <div class="container">
+            <div class="row d-flex justify-content-between align-items-center">    
+                <div class="">
+                    <div class="header-info">
+                        info@toucango.com.au
+                    </div>
                 </div>
-            </div>
-            <div class="">
-                <div class="header-icons d-flex">
-                    <div class="wishlist px-3 b-separator-right b-color-white">
-                        <i class="fas fa-heart"></i>
-                    </div>
-                    <div class="cart px-3 b-separator-right b-color-white">
-                        <div class="minicart-header" data-move="minicart-mobile">
-                            <?php echo $this->getChildHtml("minicart"); ?>
+                <div class="">
+                    <div class="header-icons d-flex">
+                        <div class="wishlist px-3 b-separator-right b-color-white mr-3">
+                            <i class="fas fa-heart"></i>
                         </div>
-                    </div>
-                    <div class="account px-3">
-                        <div class="block-content" data-move="customer-mobile">
-                            <?php echo $this->getChildHtml("header.links"); ?>
+                        <div class="cart px-3 b-color-white">
+                            <div class="mobile-cart">
+                                <div id="minicart-mobile" class="minicart-mobile">
+                                    <span class="hidden"><?php echo __('Cart Mobile'); ?></span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    <div class="mobile-top">
+    </div>
+    <div class="mobile-header-bottom bg-gray-darker text-white p-3">
         <div class="container">
-            <div class="mobile-header-content">
+            <div class="mobile-header-content d-flex">
                 <div class="mobile-menu">
                     <a id="btn-nav-mobile" href="javascript:void(0);">
                         <span class="s-top"></span>
@@ -65,21 +66,13 @@ $breakPoint  = $_configCore->getGeneral('mobile_layout/mobile_break_point');
                              height="<?php echo $_configCore->getGeneral('mobile_layout/logomobile_height'); ?>"/>
                     </a>
                 </div>
-
-                <div class="mobile-cart">
-                    <div id="minicart-mobile" class="minicart-mobile"><span
-                                class="hidden"><?php echo __('Cart Mobile'); ?></span></div>
+                <div class="mobile-bottom">
+                    <?php echo $this->getChildHtml("topSearchMobile"); ?>
                 </div>
             </div>
         </div>
     </div>
-
-    <div class="mobile-bottom">
-        <div class="container">
-            <?php echo $this->getChildHtml("topSearchMobile"); ?>
-        </div>
-    </div>
-
+   
     <div class="sidebar-nav-mobile">
         <nav>
             <div class="nav nav-tabs" id="nav-tab" role="tablist">
