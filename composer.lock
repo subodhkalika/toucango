@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ed71391db1273bfff462b880673255e6",
+    "content-hash": "d2ca10115f9ddcb1e5b0887c59868319",
     "packages": [
         {
             "name": "amzn/amazon-pay-and-login-magento-2-module",
@@ -15723,6 +15723,105 @@
                 "totp"
             ],
             "time": "2018-09-13T19:25:26+00:00"
+        },
+        {
+            "name": "stripe/module-payments",
+            "version": "2.2.1",
+            "dist": {
+                "type": "zip",
+                "url": "https://repo.magento.com/archives/stripe/module-payments/stripe-module-payments-2.2.1.0.zip",
+                "shasum": "c09d2e092bdee77dd3230b492c646d5bb70bede4"
+            },
+            "require": {
+                "stripe/stripe-php": "^7.33.0"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "StripeIntegration\\Payments\\": ""
+                }
+            },
+            "license": [
+                "https://stripe.com/magento/legal"
+            ],
+            "description": "Shared component for accepting online payments in Magento 2 using the Stripe payment gateway."
+        },
+        {
+            "name": "stripe/stripe-payments",
+            "version": "2.2.1",
+            "dist": {
+                "type": "zip",
+                "url": "https://repo.magento.com/archives/stripe/stripe-payments/stripe-stripe-payments-2.2.1.0.zip",
+                "shasum": "ae3e8f1a51fc82c9b244dd6631a7f545e95139f5"
+            },
+            "require": {
+                "stripe/module-payments": ">=2.2.1"
+            },
+            "type": "metapackage",
+            "license": [
+                "https://stripe.com/magento/legal"
+            ],
+            "description": "Accept online payments in Magento 2 using the Stripe payment gateway."
+        },
+        {
+            "name": "stripe/stripe-php",
+            "version": "v7.61.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/stripe/stripe-php.git",
+                "reference": "51c6cd18cb51740101c940a3fefc876ef7cd8cae"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/stripe/stripe-php/zipball/51c6cd18cb51740101c940a3fefc876ef7cd8cae",
+                "reference": "51c6cd18cb51740101c940a3fefc876ef7cd8cae",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "php": ">=5.6.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "2.16.1",
+                "php-coveralls/php-coveralls": "^2.1",
+                "phpunit/phpunit": "^5.7",
+                "squizlabs/php_codesniffer": "^3.3",
+                "symfony/process": "~3.4"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Stripe\\": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Stripe and contributors",
+                    "homepage": "https://github.com/stripe/stripe-php/contributors"
+                }
+            ],
+            "description": "Stripe PHP Library",
+            "homepage": "https://stripe.com/",
+            "keywords": [
+                "api",
+                "payment processing",
+                "stripe"
+            ],
+            "time": "2020-10-20T20:01:45+00:00"
         },
         {
             "name": "symfony/console",

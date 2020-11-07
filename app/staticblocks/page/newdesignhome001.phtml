@@ -1,4 +1,7 @@
 <style>
+    .logo img {
+           width: 56px !important;
+    }
     .tcg-category-image-subtitle {
         width: 300px;
         padding: 0 40px;
@@ -323,16 +326,15 @@
         }
         .container-wrapper {
             margin: 0;
-            margin-left: 0;
-            margin-right: 0;
-            width: 100%;
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+            width: 100% !important;
         }
         .main-banner {
-            padding-top: 55px;
+            padding: 55px 5% 500px 5%;
             text-align: center;
             justify-content: center;
             width: 100%;
-            padding-bottom: 500px;
             background-position: left top;
         }
         .banner-title, .banner-sub-title {
@@ -378,7 +380,12 @@
         .greeting-card-b-wrapper .sb-shop-now-button{
             padding: 7px 50px;
         }
-        
+        .home-icon img {
+            width: 40px;
+        }
+        .home-icons-section {
+            padding: 32px 20px;
+        }
     }
 </style>
 <div class="home-page-1 title-block-1 bottom-title">
@@ -478,7 +485,7 @@
             <div class="slider-product-home" style="margin-bottom: 20px;">
                 <div class="stagepadding-slider nav-style-2">
                     <div data-owl="owl-slider" data-autoplay="false" data-nav="false" data-dots="false" data-screen0="1" data-screen481="2" data-screen768="3" data-screen992="3" data-screen1200="4" data-screen1441="4" data-screen1681="4" data-screen1920="4" data-margin="30" data-autoplayhoverpause="true" data-loop="false" data-center="false" data-stagepadding="15" data-mousedrag="false" data-touchdrag="false">
-                        {{block class="Sm\FilterProducts\Block\FilterProducts" template="Sm_FilterProducts::slider.phtml" title_module="no_title" product_source="best_sellers" select_category="4,5,6,14,15,16,17,18,19,23,24,25,26,27,28,34,35,36,40,6,30,31,32,33,37,41" product_limitation="6" display_countdown="0" date_to=""}}
+                        {{block class="Sm\FilterProducts\Block\FilterProducts" template="Sm_FilterProducts::slider.phtml" title_module="no_title" product_source="other_products" select_category="60" product_limitation="6" display_countdown="0" date_to=""}}
                     </div>
                 </div>
             </div>
