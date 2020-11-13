@@ -513,6 +513,9 @@ class FilterProducts extends \Magento\Catalog\Block\Product\AbstractProduct
 			case 'random':
 				$collection->getSelect()->order(new \Zend_Db_Expr('RAND()'));
 				break;
+			case 'position':
+				$collection->setOrder($product_order_by, $product_order_dir);
+				break;
 		}
 		
 		$collection->getSelect()->distinct(true)->group('e.entity_id')->limit($count);
