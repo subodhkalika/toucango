@@ -505,7 +505,7 @@ class FilterProducts extends \Magento\Catalog\Block\Product\AbstractProduct
 				$collection->setOrder($product_order_by, $product_order_dir);
 				break;
 			case 'position':
-				$collection->setOrder('cat_index_position','ASC');
+				$collection->setOrder('cat_index_position', $product_order_dir);
 			case 'created_at':
 				$collection->getSelect()->order('created_at ' . $product_order_dir . '');
 				break;
