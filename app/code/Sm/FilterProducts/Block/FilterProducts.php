@@ -514,7 +514,7 @@ class FilterProducts extends \Magento\Catalog\Block\Product\AbstractProduct
 				$collection->getSelect()->order(new \Zend_Db_Expr('RAND()'));
 				break;
 			case 'position':
-				$collection->setOrder($product_order_by, $product_order_dir);
+				$collection->getSelect()->order('position ' . $product_order_dir . '');
 				break;
 		}
 		
