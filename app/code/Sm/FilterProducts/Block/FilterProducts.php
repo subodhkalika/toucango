@@ -496,7 +496,7 @@ class FilterProducts extends \Magento\Catalog\Block\Product\AbstractProduct
 				'product_id=entity_id',
 				null,
 				'left'
-			)->addAttributeToFilter(array(array('attribute' => 'category_id', 'in' => array( $category_id))));
+			)->addAttributeToFilter(array(array('attribute' => 'category_id', 'in' => array( $category_id))))->addAttributeToSort('position', 'ASC');
 		}
         $collection->setVisibility($this->_catalogProductVisibility->getVisibleInCatalogIds());
 		switch ($product_order_by) {
