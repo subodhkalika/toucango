@@ -32,7 +32,7 @@ $breakPoint  = $_configCore->getGeneral('mobile_layout/mobile_break_point');
                 <div class="">
                     <div class="header-icons d-flex">
                         <div class="wishlist px-3 b-separator-right b-color-white mr-3">
-                            <i class="fas fa-heart"></i>
+                            <?php echo $this->getChildHtml('wishlist') ?>
                         </div>
                         <div class="cart px-3 b-color-white">
                             <div class="mobile-cart">
