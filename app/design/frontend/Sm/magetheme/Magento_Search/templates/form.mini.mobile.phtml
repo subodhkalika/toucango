@@ -13,43 +13,55 @@ $helper = $this->helper(\Magento\Search\Helper\Data::class);
 ?>
 <div class="block-search-mobile">
     <div class="block-content">
-        <form class="form minisearch" id="search_mini_form_mobile" action="<?= /* @escapeNotVerified */
-        $helper->getResultUrl() ?>" method="get">
-            <div class="field search">
-                <div class="control">
-                    <input id="search-mobile"
-                           data-mage-init='{"quickSearch":{
-                                "formSelector":"#search_mini_form_mobile",
-                                "url":"<?= /* @escapeNotVerified */
-                           $helper->getSuggestUrl() ?>",
-                                "destinationSelector":"#search_autocomplete_mobile"}
-                           }'
-                           type="text"
-                           name="<?= /* @escapeNotVerified */
-                           $helper->getQueryParamName() ?>"
-                           value="<?= /* @escapeNotVerified */
-                           $helper->getEscapedQueryText() ?>"
-                           placeholder="<?= /* @escapeNotVerified */
-                           __('Search entire store here...') ?>"
-                           class="input-text"
-                           maxlength="<?= /* @escapeNotVerified */
-                           $helper->getMaxQueryLength() ?>"
-                           role="combobox"
-                           aria-haspopup="false"
-                           aria-autocomplete="both"
-                           autocomplete="off"/>
-                    <div id="search_autocomplete_mobile" class="search-autocomplete"></div>
-                    <?= $block->getChildHtml() ?>
+        <div id="search-btn"><a href="javascript:void(0)"><?php  echo __('Search');?></div><!-- change done here-->
+        <div id="custom-search" style="display: none;"> <!-- change done here-->
+            <form class="form minisearch" id="search_mini_form_mobile" action="<?= /* @escapeNotVerified */
+            $helper->getResultUrl() ?>" method="get">
+                <div class="field search">
+                    <div class="control">
+                        <input id="search-mobile"
+                            data-mage-init='{"quickSearch":{
+                                    "formSelector":"#search_mini_form_mobile",
+                                    "url":"<?= /* @escapeNotVerified */
+                            $helper->getSuggestUrl() ?>",
+                                    "destinationSelector":"#search_autocomplete_mobile"}
+                            }'
+                            type="text"
+                            name="<?= /* @escapeNotVerified */
+                            $helper->getQueryParamName() ?>"
+                            value="<?= /* @escapeNotVerified */
+                            $helper->getEscapedQueryText() ?>"
+                            placeholder="<?= /* @escapeNotVerified */
+                            __('Search entire store here...') ?>"
+                            class="input-text"
+                            maxlength="<?= /* @escapeNotVerified */
+                            $helper->getMaxQueryLength() ?>"
+                            role="combobox"
+                            aria-haspopup="false"
+                            aria-autocomplete="both"
+                            autocomplete="off"/>
+                        <div id="search_autocomplete_mobile" class="search-autocomplete"></div>
+                        <?= $block->getChildHtml() ?>
+                    </div>
                 </div>
-            </div>
-            <div class="actions">
-                <button type="submit"
-                        title="<?= $block->escapeHtml(__('Search')) ?>"
-                        class="action search">
-                    <span><?= /* @escapeNotVerified */
-                        __('Search') ?></span>
-                </button>
-            </div>
-        </form>
+                <div class="actions">
+                    <button type="submit"
+                            title="<?= $block->escapeHtml(__('Search')) ?>"
+                            class="action search">
+                        <span><?= /* @escapeNotVerified */
+                            __('Search') ?></span>
+                    </button>
+                </div>
+            </form>
+        </div>
     </div>
 </div>
+<script type="text/javascript">// changes done here 
+  require(['jquery'], function($){
+    $(document).ready( function() {
+      $('#search-btn').click(function(){
+        $('#custom-search').toggle('slow');
+      });
+    });
+  });
+</script>
