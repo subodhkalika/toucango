@@ -496,7 +496,7 @@ class FilterProducts extends \Magento\Catalog\Block\Product\AbstractProduct
 				'product_id=entity_id',
 				null,
 				'left'
-			)->addAttributeToFilter(array(array('attribute' => 'category_id', 'in' => array( $category_id))))->addAttributeToSort('position', 'ASC');
+			)->addAttributeToFilter(array(array('attribute' => 'category_id', 'in' => array( $category_id))));
 		}
         $collection->setVisibility($this->_catalogProductVisibility->getVisibleInCatalogIds());
 		switch ($product_order_by) {
@@ -504,6 +504,8 @@ class FilterProducts extends \Magento\Catalog\Block\Product\AbstractProduct
 			case 'name':
 				$collection->setOrder($product_order_by, $product_order_dir);
 				break;
+			case 'position':
+				$collection->setOrder('cat_index_position','ASC');
 			case 'created_at':
 				$collection->getSelect()->order('created_at ' . $product_order_dir . '');
 				break;
@@ -512,9 +514,6 @@ class FilterProducts extends \Magento\Catalog\Block\Product\AbstractProduct
 				break;
 			case 'random':
 				$collection->getSelect()->order(new \Zend_Db_Expr('RAND()'));
-				break;
-			case 'position':
-				$collection->getSelect()->order('position ' . $product_order_dir . '');
 				break;
 		}
 		
