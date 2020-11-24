@@ -271,6 +271,7 @@ return [
         'Magefan_Community' => 1,
         'Magefan_Blog' => 1,
         'Magefan_WysiwygAdvanced' => 1,
+        'Magenest_GiftCard' => 1,
         'Mageplaza_Core' => 1,
         'Mageplaza_BetterMaintenance' => 1,
         'Sm_FilterProducts' => 1,

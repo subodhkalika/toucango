@@ -255,7 +255,7 @@ class Design extends AbstractModifier
             'elementTmpl' => 'Magento_Downloadable/components/file-uploader',
             'fileInputName' => 'link',
             'uploaderConfig' => [
-                'url' => $this->urlBuilder->addSessionParam()->getUrl(
+                'url' => $this->urlBuilder->getUrl(
                     'giftcard/design/upload',
                     ['type' => 'link', '_secure' => true]
                 ),
@@ -305,7 +305,7 @@ class Design extends AbstractModifier
             'elementTmpl' => 'Magento_Downloadable/components/file-uploader',
             'fileInputName' => 'art',
             'uploaderConfig' => [
-                'url' => $this->urlBuilder->addSessionParam()->getUrl(
+                'url' => $this->urlBuilder->getUrl(
                     'giftcard/design/art',
                     ['type' => 'art', '_secure' => true]
                 ),

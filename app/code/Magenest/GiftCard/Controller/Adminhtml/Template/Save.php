@@ -109,7 +109,7 @@ class Save extends TemplateController
             $uploaded_background_params = $this->getRequest()->getParam('background_img');
             $uploaded_background =[];
 
-            if ($main_image_params) {
+            if ($uploaded_background_params) {
                 foreach ($uploaded_background_params as $key=> $value) {
                     array_push($uploaded_background,$value);
                 }
