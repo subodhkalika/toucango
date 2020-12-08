@@ -1,4 +1,9 @@
 ############################################
+## Redirect all http to https
+#RewriteCond %{HTTPS} off
+#RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301,NE]
+
+############################################
 ## overrides deployment configuration mode value
 ## use command bin/magento deploy:mode:set to switch modes
 
