@@ -53,17 +53,17 @@
         <h1 class="section-header">Business Type:</h1>
         <div class="form-check mt-2">
             <label class="form-check-label">
-              <input required type="radio" class="w-auto form-check-input" value="experience_operator" name="compliant">Experience operator
+              <input required type="radio" class="w-auto form-check-input" value="experience_operator" name="business_type" checked required>Experience operator
             </label>
         </div>
         <div class="form-check mt-2">
             <label class="form-check-label">
-                <input required type="radio" class="w-auto form-check-input" value="service_provider" name="compliant">Service provider
+                <input required type="radio" class="w-auto form-check-input" value="service_provider" name="business_type" required>Service provider
             </label>
         </div>
         <div class="form-check mt-2">
             <label class="form-check-label">
-                <input required type="radio" class="w-auto form-check-input" value="product__gift" name="compliant">Products and gift merchant
+                <input required type="radio" class="w-auto form-check-input" value="product__gift" name="business_type" required>Products and gift merchant
             </label>
         </div>
     </div>
@@ -104,7 +104,7 @@
     </div>
     <div class="form-check">
         <label class="form-check-label">
-            <input type="radio" class="w-auto form-check-input" value="false" name="gst_registered">No
+            <input type="radio" class="w-auto form-check-input" value="false" name="gst_registered" checked>No
         </label>
     </div>
     <p>Are you compliant with all state and local statutory regulations to operate</p>
@@ -115,7 +115,7 @@
     </div>
     <div class="form-check">
         <label class="form-check-label">
-            <input type="radio" class="w-auto form-check-input" value="false" name="compliant">No
+            <input type="radio" class="w-auto form-check-input" value="false" name="compliant" checked>No
         </label>
     </div>
     <p class="next-sec"><strong>Policy Number</strong></p>
@@ -189,7 +189,7 @@
     </p>
     <p>
         <p class="next-sec"><strong>Exclusitivity</strong></p>
-        <select placeholder="Exclusitivity" oninput="this.className = ''" name="product_location">
+        <select placeholder="Exclusitivity" oninput="this.className = ''" name="exclusitivity">
             <option value="">--select an item--</option>
             <option value="I am listing one or more experiences exclusive to Toucango BUT I work with other booking agents ">I am listing one or more experiences exclusive to Toucango BUT I work with other booking agents </option>
             <option value="I want to work with Toucango but not on an exclusive basis ">I want to work with Toucango but not on an exclusive basis </option>
@@ -266,19 +266,11 @@
     </body>
 </html>
 <?php
-    ini_set('display_errors', '1');
-    ini_set('display_startup_errors', '1');
-    error_reporting(E_ALL);
 
     function display()
     {
         // echo "hello ".$_POST["studentname"];
-
-        $description = $_POST["description"];
-        $author = $_POST["author"];
-        $compliant = $_POST["compliant"];
-        $compliant = $_POST["compliant"];
-        $compliant = $_POST["compliant"];
+        $business_type = $_POST["business_type"];
         $fname = $_POST["fname"];
         $lname = $_POST["lname"];
         $jtitle = $_POST["jtitle"];
@@ -291,10 +283,8 @@
         $business_address = $_POST["business_address"];
         $state = $_POST["state"];
         $zip_postal_code = $_POST["zip_postal_code"];
-        $gst_registered = $_POST["gst_registered"];
-        $gst_registered = $_POST["gst_registered"];
         $compliant = $_POST["compliant"];
-        $compliant = $_POST["compliant"];
+        $gst_registered = $_POST["gst_registered"];
         $policy_number = $_POST["policy_number"];
         $insured_amount = $_POST["insured_amount"];
         $policy_expiry_date = $_POST["policy_expiry_date"];
@@ -302,49 +292,46 @@
         $website = $_POST["website"];
         $product_category = $_POST["product_category"];
         $product_location = $_POST["product_location"];
-        $product_location = $_POST["product_location"];
+        $exclusitivity = $_POST["exclusitivity"];
         $additional_information = $_POST["additional_information"];
-        $myfile = fopen("./newfile.txt", "w") or die("Unable to open file!");
-
-        $txt = "NEW REGISTRATION" .
-        ", description :" . $description .
-        ", author :" . $author .
-        ", compliant :" . $compliant .
-        ", compliant :" . $compliant .
-        ", compliant :" . $compliant .
-        ", fname :" . $fname .
-        ", lname :" . $lname .
-        ", jtitle :" . $jtitle .
-        ", email :" . $email .
-        ", phone :" . $phone .
-        ", city :" . $city .
-        ", trading_name :" . $trading_name .
-        ", registered_business_name :" . $registered_business_name .
-        ", abn_acn :" . $abn_acn .
-        ", business_address :" . $business_address .
-        ", state :" . $state .
-        ", zip_postal_code :" . $zip_postal_code .
-        ", gst_registered :" . $gst_registered .
-        ", gst_registered :" . $gst_registered .
-        ", compliant :" . $compliant .
-        ", compliant :" . $compliant .
-        ", policy_number :" . $policy_number .
-        ", insured_amount :" . $insured_amount .
-        ", policy_expiry_date :" . $policy_expiry_date .
-        ", certificate_file :" . $certificate_file .
-        ", website :" . $website .
-        ", product_category :" . $product_category .
-        ", product_location :" . $product_location .
-        ", product_location :" . $product_location .
-        ", additional_information :" . $additional_information;
+        
+        $filename = "newfile.txt";
+        $current = file_get_contents($filename);
+        $current .= "\n" . "\n" . "NEW REGISTRATION" .
+        "@@@@@" .
+        ", business_type :" . $business_type . "\n" . 
+        ", fname :" . $fname . "\n" . 
+        ", lname :" . $lname . "\n" . 
+        ", jtitle :" . $jtitle . "\n" . 
+        ", email :" . $email . "\n" . 
+        ", phone :" . $phone . "\n" . 
+        ", city :" . $city . "\n" . 
+        ", trading_name :" . $trading_name . "\n" . 
+        ", registered_business_name :" . $registered_business_name . "\n" . 
+        ", abn_acn :" . $abn_acn . "\n" . 
+        ", business_address :" . $business_address . "\n" . 
+        ", state :" . $state . "\n" . 
+        ", zip_postal_code :" . $zip_postal_code . "\n" . 
+        ", compliant :" . $compliant . "\n" . 
+        ", gst_registered :" . $gst_registered . "\n" . 
+        ", policy_number :" . $policy_number . "\n" . 
+        ", insured_amount :" . $insured_amount . "\n" . 
+        ", policy_expiry_date :" . $policy_expiry_date . "\n" . 
+        ", certificate_file :" . $certificate_file . "\n" . 
+        ", website :" . $website . "\n" . 
+        ", product_category :" . $product_category . "\n" . 
+        ", product_location :" . $product_location . "\n" . 
+        ", exclusitivity :" . $exclusitivity . "\n" . 
+        ", additional_information :" . $additional_information . "\n";
 
         // $myfile = fopen("./newfile.txt", "w") or die("Unable to open file!");
         // $txt = "asd";
-        fwrite($myfile, $txt);
-        fclose($myfile);
+        file_put_contents($filename, $current);
     }
     if(isset($_POST['submit']))
     {
+        echo("submit");
+        var_dump($_POST);
         display();
     } 
 

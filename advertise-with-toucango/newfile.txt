@@ -1,1 +1,157 @@
-, description :, author :, compliant :experience_operator, compliant :experience_operator, compliant :experience_operator, fname :asd, lname :asd, jtitle :asd, email :asd, phone :asd, city :asd, trading_name :, registered_business_name :, abn_acn :, business_address :, state :, zip_postal_code :, gst_registered :, gst_registered :, compliant :experience_operator, compliant :experience_operator, policy_number :, insured_amount :, policy_expiry_date :, certificate_file :, website :, product_category :, product_location :, product_location :, additional_information :
+ 
+
+
+NEW REGISTRATION@@@@@, business_type :experience_operator
+, fname :asd
+, lname :asd
+, jtitle :asd
+, email :asd
+, phone :asd
+, city :asd
+, trading_name :
+, registered_business_name :
+, abn_acn :
+, business_address :
+, state :
+, zip_postal_code :
+, compliant :false
+, gst_registered :false
+, policy_number :
+, insured_amount :
+, policy_expiry_date :
+, certificate_file :
+, website :
+, product_category :
+, product_location :
+, exclusitivity :
+, additional_information :
+
+
+NEW REGISTRATION@@@@@, business_type :experience_operator
+, fname :asd
+, lname :asd
+, jtitle :asd
+, email :asd
+, phone :asd
+, city :asd
+, trading_name :
+, registered_business_name :
+, abn_acn :
+, business_address :
+, state :
+, zip_postal_code :
+, compliant :false
+, gst_registered :false
+, policy_number :
+, insured_amount :
+, policy_expiry_date :
+, certificate_file :
+, website :
+, product_category :
+, product_location :
+, exclusitivity :
+, additional_information :
+
+
+NEW REGISTRATION@@@@@, business_type :experience_operator
+, fname :asd
+, lname :asd
+, jtitle :asd
+, email :asd
+, phone :asd
+, city :qqqq
+, trading_name :
+, registered_business_name :
+, abn_acn :
+, business_address :
+, state :
+, zip_postal_code :
+, compliant :false
+, gst_registered :false
+, policy_number :
+, insured_amount :
+, policy_expiry_date :
+, certificate_file :
+, website :
+, product_category :
+, product_location :
+, exclusitivity :
+, additional_information :
+
+
+NEW REGISTRATION@@@@@, business_type :experience_operator
+, fname :asd
+, lname :asd
+, jtitle :asd
+, email :asd
+, phone :asd
+, city :qqqq
+, trading_name :
+, registered_business_name :
+, abn_acn :
+, business_address :
+, state :
+, zip_postal_code :
+, compliant :false
+, gst_registered :false
+, policy_number :
+, insured_amount :
+, policy_expiry_date :
+, certificate_file :
+, website :
+, product_category :
+, product_location :
+, exclusitivity :
+, additional_information :
+
+
+NEW REGISTRATION@@@@@, business_type :experience_operator
+, fname :asd
+, lname :asd
+, jtitle :asd
+, email :asd
+, phone :ww
+, city :w
+, trading_name :s
+, registered_business_name :s
+, abn_acn :s
+, business_address :s
+, state :s
+, zip_postal_code :s
+, compliant :false
+, gst_registered :false
+, policy_number :s
+, insured_amount :d
+, policy_expiry_date :d
+, certificate_file :
+, website :s
+, product_category :Wine and Dine
+, product_location :
+, exclusitivity :
+, additional_information :
+
+
+NEW REGISTRATION@@@@@, business_type :experience_operator
+, fname :asd
+, lname :asd
+, jtitle :asd
+, email :asd
+, phone :asd
+, city :asd
+, trading_name :asd
+, registered_business_name :asd
+, abn_acn :asd
+, business_address :asd
+, state :asd
+, zip_postal_code :asd
+, compliant :false
+, gst_registered :false
+, policy_number :asd
+, insured_amount :asd
+, policy_expiry_date :asd
+, certificate_file :
+, website :asd
+, product_category :Adventure/Sports
+, product_location :
+, exclusitivity :
+, additional_information :

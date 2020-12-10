@@ -2,6 +2,7 @@ var currentTab = 0; // Current tab is set to be the first tab (0)
 showTab(currentTab); // Display the current tab
 
 function showTab(n) {
+  $("html, body").animate({ scrollTop: 0 }, "slow");
   // This function will display the specified tab of the form
   var x = document.getElementsByClassName("tab");
   x[n].style.display = "block";
@@ -10,15 +11,6 @@ function showTab(n) {
     document.getElementById("prevBtn").style.display = "none";
   } else {
     document.getElementById("prevBtn").style.display = "inline";
-  }
-  if (n == (x.length - 1)) {
-    document.getElementById("nextBtn").innerHTML = "Submit";
-    document.getElementById("nextBtn").type = "submit";
-    document.getElementById("nextBtn").name = "submit";
-  } else {
-    document.getElementById("nextBtn").innerHTML = "Next";
-    document.getElementById("nextBtn").type = "button";
-    document.getElementById("nextBtn").name = "submitt";
   }
   // and run a function that will display the correct step indicator:
   fixStepIndicator(n)
@@ -36,11 +28,26 @@ function nextPrev(n) {
   // if you have reached the end of the form
   if (currentTab >= x.length) {
     //  the form gets submitted:
-    document.getElementById("regForm").submit();
+    // document.getElementById("regForm").submit();
     return false;
   }
   // Otherwise, display the correct tab:
   showTab(currentTab);
+
+  if (currentTab == (x.length - 1)) {
+    document.getElementById("nextBtn").innerHTML = "Submit";
+    setTimeout(function() {
+      document.getElementById("nextBtn").type = "submit"
+    }, 1000);
+
+    document.getElementById("nextBtn").name = "submit";
+
+    return false;
+  } else {
+    document.getElementById("nextBtn").innerHTML = "Next";
+    document.getElementById("nextBtn").type = "button";
+    document.getElementById("nextBtn").name = "submitt";
+  }
 }
 
 function validateForm() {

@@ -43,7 +43,7 @@
             <div class="container">
                 <div class="masthead-subheading">Take the next step to grow your business</div>
                 <div class="masthead-heading text-uppercase"> We've Got You Covered</div>
-                <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="signup.php">Sign Up Here</a>
+                <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="vendorregister.php">Sign Up Here</a>
             </div>
         </header>
         <!-- Services-->
