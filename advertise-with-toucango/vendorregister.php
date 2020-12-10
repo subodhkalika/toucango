@@ -216,7 +216,7 @@
         <option value="None">None </option>
     </select>
   </div>
-  <div style="overflow:auto;">
+  <div style="overflow:auto;" class="mt-3">
     <div style="float:right;">
       <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
       <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
@@ -327,8 +327,7 @@
     }
     if(isset($_POST['submit']))
     {
-        echo("submit");
-        var_dump($_POST);
+        echo("<div class='notification' id='notify'><div class='alert alert-success alert-dismissible fade show'>Thank you for registering. Your details are submitted successfully.</div></div>");
         display();
     } 
 

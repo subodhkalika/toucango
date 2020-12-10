@@ -155,3 +155,107 @@ NEW REGISTRATION@@@@@, business_type :experience_operator
 , product_location :
 , exclusitivity :
 , additional_information :
+
+
+NEW REGISTRATION@@@@@, business_type :experience_operator
+, fname :asd
+, lname :ww
+, jtitle :w
+, email :w
+, phone :w
+, city :w
+, trading_name :
+, registered_business_name :
+, abn_acn :
+, business_address :
+, state :
+, zip_postal_code :
+, compliant :false
+, gst_registered :false
+, policy_number :
+, insured_amount :
+, policy_expiry_date :
+, certificate_file :
+, website :
+, product_category :
+, product_location :
+, exclusitivity :
+, additional_information :
+
+
+NEW REGISTRATION@@@@@, business_type :experience_operator
+, fname :asd
+, lname :ww
+, jtitle :w
+, email :w
+, phone :w
+, city :w
+, trading_name :
+, registered_business_name :
+, abn_acn :
+, business_address :
+, state :
+, zip_postal_code :
+, compliant :false
+, gst_registered :false
+, policy_number :
+, insured_amount :
+, policy_expiry_date :
+, certificate_file :
+, website :
+, product_category :
+, product_location :
+, exclusitivity :
+, additional_information :
+
+
+NEW REGISTRATION@@@@@, business_type :experience_operator
+, fname :q
+, lname :q
+, jtitle :q
+, email :q
+, phone :q
+, city :q
+, trading_name :
+, registered_business_name :
+, abn_acn :
+, business_address :
+, state :
+, zip_postal_code :
+, compliant :false
+, gst_registered :false
+, policy_number :
+, insured_amount :
+, policy_expiry_date :
+, certificate_file :
+, website :
+, product_category :
+, product_location :
+, exclusitivity :
+, additional_information :
+
+
+NEW REGISTRATION@@@@@, business_type :experience_operator
+, fname :q
+, lname :q
+, jtitle :q
+, email :q
+, phone :q
+, city :q
+, trading_name :
+, registered_business_name :
+, abn_acn :
+, business_address :
+, state :
+, zip_postal_code :
+, compliant :false
+, gst_registered :false
+, policy_number :
+, insured_amount :
+, policy_expiry_date :
+, certificate_file :
+, website :
+, product_category :
+, product_location :
+, exclusitivity :
+, additional_information :
