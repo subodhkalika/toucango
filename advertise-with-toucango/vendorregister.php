@@ -215,9 +215,6 @@
         <option value="Other">Other </option>
         <option value="None">None </option>
     </select>
-    <p class="next-sec"><strong>Are you currently working with any of the following distributors?</strong></p>
-
-    <p class="next-sec"><strong>Are you listed on TripAdvisor?</strong></p>
   </div>
   <div style="overflow:auto;">
     <div style="float:right;">
