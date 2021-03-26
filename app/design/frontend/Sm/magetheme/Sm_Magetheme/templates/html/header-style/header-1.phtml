@@ -13,10 +13,17 @@
                     </div>
                 </div>
                 <div class="">
+				 
                     <div class="header-icons d-flex">
-                        <div class="wishlist px-3 b-separator-right b-color-white">
-                            <i class="fas fa-heart"></i>
+					
+					
+					
+					    <div class="wishlist px-3 b-separator-right b-color-white">
+                            <i class="far fa-heart"><?php echo $this->getChildHtml("catalog.compare.link"); ?></i>
                         </div>
+                       <!-- <div class="wishlist px-3 b-separator-right b-color-white">
+                            <i class="far fa-heart"></i>
+                        </div>-->
                         <div class="cart px-3 b-separator-right b-color-white">
                             <div class="minicart-header" data-move="minicart-mobile">
                                 <?php echo $this->getChildHtml("minicart"); ?>
@@ -55,3 +62,17 @@
         </div>
     </div>
 </div>
+<script type = "text/javascript" >
+        require([
+            'jquery'
+        ], function ($) {
+            var $headerHeight = $(".mobile-header-wrap").outerHeight();
+            $(window).scroll(function () {
+                if ($(window).scrollTop() > $headerHeight) {
+                    $('.sidebar-main, .toolbar-sorter').addClass('sticky');
+                } else if ($(window).scrollTop() == 0) {
+                    $('.sidebar-main, .toolbar-sorter').removeClass('sticky');
+                }
+            });
+        });
+</script>

@@ -9,12 +9,9 @@
 ?>
 
 <div class="contact-us-container">
-    <div class="google-map">
-        <?php echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('google-map')->toHtml(); ?>
-    </div>
-
+    
     <div class="row">
-        <div class="col-lg-8">
+        <div class="col-lg-6">
             <div class="block-contact-form">
                 <div class="bonus-title">
                     <strong><?= $block->escapeHtml(__('Write to Us')) ?></strong>
@@ -83,10 +80,13 @@
             </div>
         </div>
 
-        <div class="col-lg-4">
+        <div class="col-lg-6">
             <?php echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('contact-us-info')->toHtml(); ?>
         </div>
     </div>
 
 
 </div>
+<!-- <div class="google-map">
+        <?php //echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('google-map')->toHtml(); ?>
+    </div> -->

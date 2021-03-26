@@ -26,7 +26,7 @@
                        template="switch/languages.phtml"/>
                 <block class="Magento\Framework\View\Element\Template" name="top.search" as="topSearch"
                        template="Magento_Search::form.mini.phtml"/>
-
+				
                 <container name="search-header" label="Search" as="search-header" htmlTag="div"
                            htmlClass="search-wrapper"/>
 
@@ -45,7 +45,21 @@
 
                 <block class="Magento\Wishlist\Block\Customer\Sidebar" name="wishlist_header" as="wishlist.header"
                        template="Magento_Wishlist::wishlist-header.phtml"/>
-
+<block class="Magento\Framework\View\Element\Template" name="catalog.compare.link" before="-"
+                   template="Magento_Catalog::product/compare/link.phtml">
+                <arguments>
+                    <argument name="jsLayout" xsi:type="array">
+                        <item name="components" xsi:type="array">
+                            <item name="compareProducts" xsi:type="array">
+                                <item name="component" xsi:type="string">Magento_Catalog/js/view/compare-products</item>
+                            </item>
+                        </item>
+                    </argument>
+                </arguments>
+            </block>
+			<block class="Magento\Framework\View\Element\Template" name="top.search" as="topSearch" template="Magento_Search::form.mini.phtml" />
+			<container name="search-header" label="Search" as="search-header" htmlTag="div"
+                           htmlClass="search-wrapper"/>
                 <block class="Magento\Framework\View\Element\Template" name="top.search.mobile" as="topSearchMobile"
                        template="Magento_Search::form.mini.mobile.phtml"/>
                 <block class="Magento\Store\Block\Switcher" name="store.settings.language"
@@ -73,7 +87,10 @@
         </referenceContainer>
 
         <!--<move element="catalog.topnav" destination="theme_header"/>-->
+		<move element="catalog.compare.link" destination="header-wrapper" />
         <move element="catalog.compare.link" destination="theme_header" before="-"/>
+		<move element="top.search" destination="header-wrapper"/>
+		<move element="top.search" destination="theme_header"/>
         <move element="top.search" destination="search-header"/>
         <move element="minicart" destination="theme_header"/>
         <move element="currency" destination="theme_header"/>

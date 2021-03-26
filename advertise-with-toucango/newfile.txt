@@ -259,3 +259,55 @@ NEW REGISTRATION@@@@@, business_type :experience_operator
 , product_location :
 , exclusitivity :
 , additional_information :
+
+
+NEW REGISTRATION@@@@@, business_type :experience_operator
+, fname :Bill
+, lname :Mill
+, jtitle :Manager 
+, email :mibodi1@icloud.com
+, phone :0417509636
+, city :Melbourne 
+, trading_name :Books
+, registered_business_name :Books
+, abn_acn :4177778889
+, business_address :Melbourne 
+, state :Victoria 
+, zip_postal_code :3000
+, compliant :true
+, gst_registered :true
+, policy_number :
+, insured_amount :
+, policy_expiry_date :
+, certificate_file :
+, website :
+, product_category :Wine and Dine
+, product_location :Melbourne
+, exclusitivity :I am listing one or more experiences exclusive to Toucango BUT I work with other booking agents 
+, additional_information :
+
+
+NEW REGISTRATION@@@@@, business_type :experience_operator
+, fname :Rebecca
+, lname :Assice
+, jtitle :Director
+, email :rebecca@virtual-room.com
+, phone :85004840
+, city :Singapore
+, trading_name :Virtual Room Melbourne: VR Escape Room Adventure
+, registered_business_name :Virtual Room Melbourne Pty Ltd
+, abn_acn :80 629 250 693
+, business_address :75 Peel Street
+, state :VIC
+, zip_postal_code :3003
+, compliant :true
+, gst_registered :true
+, policy_number :HNL/0000726
+, insured_amount :20000000.00
+, policy_expiry_date :21/10/2021
+, certificate_file :Virtual Room Melbourne Pty Ltd - COC 2021 10 21.pdf
+, website :https://melbourne.virtual-room.com/
+, product_category :Entertainment and Culture
+, product_location :Melbourne
+, exclusitivity :I want to work with Toucango but not on an exclusive basis 
+, additional_information :VIRTUAL REALITY TIME TRAVEL ESCAPE ROOM The future of entertainment is now here with Virtual Room – an award-winning team virtual reality experience located right in the heart of Melbourne. Blending the escape room concept with a full 3D cinematic experience to deliver a unique, immersive and mind-blowing adventure lasting ~40-50 minutes.  Played in groups of 2, 3 or 4 players where each player has their own dedicated room - you will join each other in the virtual world where you can talk to each other, walk around, bend, throw objects and collaborate to solve the mission. With 3 missions to choose from, you and your team of 2-4 players will travel back to historical periods of time such as ancient Egypt and the moon landing to solve the challenges and save the world! In our latest mission, you even get to BE the zombies and fight for your survival!  Guaranteed no motion sickness unlike inferior VR experiences (e.g. ones where you are sitting down or using poor quality VR headsets) It’s unlike anything you’ve ever experienced before - immersion, freedom, adrenaline, the ultimate thrill! If you’re up for the challenge, build your team now and join the adventure.  Fun for all ages (several games with no gore or horror) - friends, families (ages 10+), birthday parties, kids’ parties, hens/bucks nights, school groups and corporate team building.

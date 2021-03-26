@@ -10,16 +10,6 @@
 <?php /* Extensions placeholder */ ?>
 <?= $block->getChildHtml('customer.form.register.extra') ?>
 <div class="flex-it-div">
-    <div class="content-div">
-    <img class="hamper-image hamper-image-desktop" src="<?php echo $this->getViewFileUrl('Toucango_RegistrationField::media/hamper.jpg'); ?>" />
-        <p>To celebrate a launch of <span><a class="blue-color" href="www.toucango.com.au">toucango.com.au</a></span>, a provider of amazing experiences and product deals, we are giving away a Christmas Hamper Worth over $500!</p>
-        <p>When you sign-up to <span><a class="blue-color" href="www.toucango.com.au">toucango.com.au</a></span> for free between September the 21st and December the 20th, 2020, you will automatically go in the draw to win an amazing Christmas gift Hamper! 🎅🎄</p>
-        <p>This hamper is worth over $500 and contains all sorts of Christmas delights to enjoy with your family and friends this Christmas. At <span><a class="blue-color" href="www.toucango.com.au">toucango.com.au</a></span> We love good products and fresh produce</p>
-        <p>Competition winners will be announced on Monday midday, the 21st of December, 2020! Remember, you gotta be in it to win it! 🤞🤞</p>
-        <p><a href="<?php echo $this->getUrl('competition-terms-and-conditions');?>">Terms & Conditions</a></p>
-        Good Luck!
-    </div>
-    <div>
         <form class="form oks create account form-create-account" action="<?= $block->escapeUrl($block->getPostActionUrl()) ?>" method="post" id="form-validate" enctype="multipart/form-data" autocomplete="off">
         <?= /* @noEscape */ $block->getBlockHtml('formkey'); ?>
         <fieldset class="fieldset create info">
@@ -206,8 +196,6 @@
             </div>
         </div>
     </form>
-    <img class="hamper-image hamper-image-mobile" src="<?php echo $this->getViewFileUrl('Toucango_RegistrationField::media/hamper.jpg'); ?>" />
-    </div>
 </div>
 
 
@@ -274,3 +262,25 @@ require([
         }
     }
 </script>
+
+<!-- -----------------Tom 25/25/2020 ----- -->
+<style type="text/css">
+    @media (min-width: 768px){
+         .fieldset > .field:not(.choice) > .label{
+            width: 40%;
+        }
+
+        .fieldset.create.info{
+            float: left;
+        }
+        .customer-account-create .form.create.account{
+            max-width: 100%;
+        }
+
+        .actions-toolbar{
+            width: 25%!important;
+            margin-left: 55%!important;
+        }
+    }
+   
+</style>

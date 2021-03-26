@@ -26,11 +26,19 @@ $breakPoint  = $_configCore->getGeneral('mobile_layout/mobile_break_point');
             <div class="row d-flex justify-content-between align-items-center">    
                 <div class="">
                     <div class="header-info">
-                        info@toucango.com.au
+<div class="mobile-menu">
+                            <a id="btn-nav-mobile" href="javascript:void(0);">
+                                <span class="s-top"></span>
+                                <span class="s-middle"></span>
+                                <span class="s-bottom"></span>
+                            </a>
+                        </div>
+
                     </div>
                 </div>
                 <div class="">
                     <div class="header-icons d-flex">
+					<?php echo $this->getChildHtml("catalog.compare.link"); ?> 
                         <div class="cart-wrap cart px-3 b-color-white">
                             <div class="mobile-cart">
                                 <div id="minicart-mobile" class="minicart-mobile">
@@ -45,12 +53,10 @@ $breakPoint  = $_configCore->getGeneral('mobile_layout/mobile_break_point');
                         <div class="header-account b-color-white mr-3">
                             <?php echo $this->getChildHtml('mini_wishlist_top') ?>
                         </div>
-                        <div class="mobile-menu">
-                            <a id="btn-nav-mobile" href="javascript:void(0);">
-                                <span class="s-top"></span>
-                                <span class="s-middle"></span>
-                                <span class="s-bottom"></span>
-                            </a>
+                        <div class="vip-star-wrapper">
+                                <a href="<?php echo $baseSrc . 'vip-service'; ?>">
+                                        <img src="<?php echo $mediaSrc . 'assets/Header/star-white.png' ?>"  alt="Vip service" class="vip-star" width="100" height="100"/>
+                                </a>
                         </div>
                     </div>
                 </div>

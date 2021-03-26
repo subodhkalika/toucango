@@ -49,13 +49,26 @@
                 <arguments>
                     <argument name="type" xsi:type="string">upsell</argument>
                 </arguments>
-                <block class="Magento\Catalog\Block\Product\ProductList\Item\Container" name="upsell.product.addto"
+                <!-- <block class="Magento\Catalog\Block\Product\ProductList\Item\Container" name="upsell.product.addto"
                        as="addto">
                     <block class="Magento\Catalog\Block\Product\ProductList\Item\AddTo\Compare"
                            name="upsell.product.addto.compare" as="compare"
                            template="Magento_Catalog::product/list/addto/compare.phtml"/>
-                </block>
+                </block> -->
             </block>
         </referenceContainer>
+
+        <!--
+        /**
+        * Details tab rename
+        */
+        -->
+        <referenceBlock name="product.info.details">                
+            <referenceBlock name="product.info.description">
+                <arguments>
+                    <argument name="title" translate="true" xsi:type="string">Important Information</argument>
+                </arguments>
+            </referenceBlock>
+        </referenceBlock>
     </body>
 </page>
